@@ -8,6 +8,20 @@
 
 ---
 
+## 🗂️ Estructura de Componentes
+
+Los componentes reutilizables viven en `app/components/`, agrupados por dominio:
+
+- `navbar/` → barra de navegación del sitio (antes llamada `header/`). Es un **Client Component** (`"use client"`) por el menú hamburguesa.
+- `footer/` → pie de página.
+- `cards/` → tarjetas de producto (`ProductCard`).
+- `modal/` → ventanas modales (ficha de detalle).
+
+Convención: un archivo por componente y el nombre en PascalCase (ej. `Navbar.tsx`).
+Cada dominio puede tener una subcarpeta `partials/` para piezas pequeñas y desacopladas (ej. los íconos en `navbar/partials/`). Los componentes presentacionales puros (sin hooks ni eventos) no necesitan `"use client"`, aunque los importe un Client Component.
+
+---
+
 ## 🎯 Reglas de Desarrollo
 
 1. **Componentes:** Prioriza componentes funcionales limpios. Utiliza Server Components por defecto en Next.js, y marca con `"use client"` únicamente los componentes que manejen interactividad (filtros, barras de búsqueda, estados de botones, etc.).

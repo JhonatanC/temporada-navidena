@@ -17,6 +17,7 @@ Un proyecto web básico y moderno desarrollado como catálogo visual para exhibi
 ## ✨ Características del Proyecto
 
 - **Vista de Catálogo:** Visualización limpia y organizada de todos los productos.
+- **Navegación Responsiva:** Barra transparente superpuesta sobre el hero; enlaces en línea en tablet/escritorio y menú hamburguesa en móvil.
 - **Sistema de Categorías:** Filtrado rápido para encontrar productos por tipo o categoría.
 - **Ficha de Detalle:** Cada producto incluye:
   - Título y precio orientativo.
@@ -32,8 +33,13 @@ Un proyecto web básico y moderno desarrollado como catálogo visual para exhibi
 ├── public/           # Archivos estáticos e imágenes
 ├── app/              # Rutas y páginas de Next.js (App Router)
 │   ├── assets/       # Imágenes y recursos visuales
-│   ├── components/   # Componentes reutilizables (Tarjetas, Filtros, Navbar)
-│   ├── data/         # Archivo de datos local (products.json) - [Si no se usa Firebase]
+│   ├── components/   # Componentes reutilizables agrupados por dominio
+│   │   ├── navbar/   # Barra de navegación (móvil: menú hamburguesa)
+│   │   │   └── partials/  # Piezas internas del navbar (íconos)
+│   │   ├── footer/   # Pie de página
+│   │   ├── cards/    # Tarjetas de producto
+│   │   └── modal/    # Ventanas modales (ficha de detalle)
+│   ├── data/         # Datos locales (products.json, navigation.ts)
 │   ├── globals.css   # Estilos globales (Tailwind)
 │   ├── layout.tsx    # Layout raíz de la aplicación
 │   └── page.tsx      # Página principal (catálogo)
