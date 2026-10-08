@@ -1,0 +1,49 @@
+[
+  {
+    "id": "prod-01",
+    "title": "Corona Navideña Tradicional Bosque",
+    "category": "Coronas",
+    "price": 45.99,
+    "description": "Corona artesanal decorada con ramas de pino verde bosque, piñas naturales y sutiles detalles en tonos vinotinto.",
+    "specs": {
+      "diameter": "45 cm",
+      "material": "Pino natural preservado y elementos sintéticos de alta durabilidad",
+      "use": "Interior y exterior techado"
+    }
+  },
+  {
+    "id": "prod-02",
+    "title": "Set de Esferas de Vidrio Soplado 'Nochebuena'",
+    "category": "Adornos",
+    "price": 29.99,
+    "description": "Juego de 6 esferas artesanales en tonos coral y vinotinto con acabados brillantes y mate.",
+    "specs": {
+      "quantity": "6 unidades",
+      "size": "8 cm de diámetro cada una",
+      "finish": "Combinación brillante y esmerilada"
+    }
+  },
+  {
+    "id": "prod-03",
+    "title": "Guirnalda Luminosa Verde Oliva",
+    "category": "Iluminación",
+    "price": 38.50,
+    "description": "Guirnalda decorativa con follaje sintético en tonos verde oliva y luces LED cálidas integradas.",
+    "specs": {
+      "length": "2 metros",
+      "power": "Funciona con pilas AA / Bajo consumo",
+      "lightColor": "Blanco cálido"
+    }
+  },
+  {
+    "id": "prod-04",
+    "title": "Centro de Mesa Navideño 'Vino y Oro'",
+    "category": "Centros de Mesa",
+    "price": 54.00,
+    "description": "Elegante arreglo central montado sobre base de madera, ideal para cenas familiares de temporada.",
+    "specs": {
+      "dimensions": "30cm x 20cm",
+      "elements": "Velas aromáticas incluidas, frutos secos decorativos y lazos de terciopelo vinotinto"
+    }
+  }
+]
