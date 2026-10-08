@@ -17,6 +17,7 @@
 - Creado el **hero** en `app/page.tsx` usando `app/assets/bg-main.jpg` como fondo (100% ancho, `600px` en escritorio, `auto` en móvil vía `md:h-[600px]`).
 - Hero con **2 botones mock** (apply: vinotinto / field: borde blanco) con `cursor-pointer`.
 - Tipografías con `next/font/google` en `layout.tsx`: **Cinzel Decorative** (`font-display`) e **Inter** (`font-sans`); tema de fuentes en `globals.css`.
+- Regla global en `globals.css` (`@layer base`): todos los H1-H6 usan Cinzel Decorative por defecto vía `var(--font-cinzel)` (no `var(--font-display)`, porque `@theme inline` no emite esa variable).
 - Creado `app/data/products.json` con 4 productos mock (coronas, esferas, guirnalda, centro de mesa); `specs` varían por producto.
 - Paleta corporativa y documentación base (`README.md`, `AGENT.md`, protocolo de memoria) definidas.
 
