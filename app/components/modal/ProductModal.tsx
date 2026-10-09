@@ -49,7 +49,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         aria-modal="true"
         aria-labelledby="product-modal-title"
         onClick={(event) => event.stopPropagation()}
-        className="relative grid max-h-[90vh] w-full max-w-3xl grid-cols-1 overflow-y-auto rounded-3xl bg-white shadow-2xl md:grid-cols-2"
+        className="relative grid max-h-[92vh] w-full max-w-5xl grid-cols-1 overflow-y-auto rounded-3xl bg-white shadow-2xl md:h-[80vh] md:grid-cols-2"
       >
         {/* Botón de cierre */}
         <button
@@ -73,7 +73,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         </div>
 
         {/* Información del producto */}
-        <div className="flex flex-col gap-5 p-8">
+        <div className="flex flex-col justify-center gap-5 p-8 md:p-10">
           <span className="w-fit rounded-full bg-rosa-coral/15 px-4 py-1 text-sm leading-[21px] font-semibold text-vinotinto">
             {product.category}
           </span>

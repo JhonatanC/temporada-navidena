@@ -24,11 +24,15 @@ import pieDeArbolRojo from "../assets/pie-de-arbol-rojo.jpeg";
 import pieDeArbolRosado from "../assets/pie-de-arbol-rosado.jpeg";
 import renoParejas from "../assets/reno-parejas.jpeg";
 
+/** Taxonomía de estilo del catálogo (pensada para filtros futuros). */
+export type ProductStyle = "Clásica" | "Natural" | "Brillante";
+
 /** Producto del catálogo, ya con la imagen resuelta y lista para usar. */
 export interface Product {
   id: string;
   title: string;
   category: string;
+  style: ProductStyle;
   price: number;
   description: string;
   specs: Record<string, string>;
