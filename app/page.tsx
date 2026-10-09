@@ -1,5 +1,7 @@
 import BgHero from "./assets/bg-main.jpg";
 import Navbar from "./components/navbar/Navbar";
+import Benefits from "./components/benefits/Benefits";
+import Promo from "./components/promo/Promo";
 
 // Datos mock del hero. Se reemplazarán por el contenido real más adelante.
 const hero = {
@@ -58,11 +60,11 @@ export default function Home() {
           </div>
         </section>
 
-        <div id="box-steps">
-          <div className="step-item"></div>
-          <div className="step-item"></div>
-          <div className="step-item"></div>
-        </div>
+        {/* Cajas de beneficios: se superponen al hero con margen top negativo */}
+        <Benefits />
+
+        {/* Sección promocional: fila texto + video mock */}
+        <Promo />
       </main>
       <footer></footer>
     </div>
