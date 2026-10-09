@@ -4,6 +4,8 @@ import Benefits from "./components/benefits/Benefits";
 import Promo from "./components/promo/Promo";
 import Catalog from "./components/catalog/Catalog";
 import Cta from "./components/cta/Cta";
+import GiftFinderButton from "./components/gift-finder/GiftFinderButton";
+import GiftIcon from "./components/hero/partials/GiftIcon";
 
 // Datos mock del hero. Se reemplazarán por el contenido real más adelante.
 const hero = {
@@ -11,20 +13,24 @@ const hero = {
   description:
     "Descubre nuestra colección de decoración navideña: coronas, esferas, guirnaldas y detalles para darle vida a cada rincón.",
   applyLabel: "Ver catálogo",
-  fieldLabel: "Contáctanos",
+  fieldLabel: "Encuentra tu regalo",
 };
 
 export default function Home() {
   return (
     <div id="wrapper" className="relative">
-      {/* Navbar transparente superpuesto sobre el hero */}
-      <header className="absolute inset-x-0 top-0 z-20">
+      {/* Navbar fijo: gestiona su propia posición, fondo y visibilidad */}
+      <header>
         <Navbar />
       </header>
       <main className="flex-1">
-        {/* HERO: ancho completo. Alto de 600px en escritorio y automático en móvil. */}
+        {/* HERO: ancho completo. Alto de 600px en escritorio y automático en móvil.
+            El id="inicio" permite que el enlace "Inicio" del navbar llegue aquí
+            (junto con los beneficios, que se superponen justo debajo).
+            `scroll-mt-20` compensa la altura del navbar fijo al navegar por anclas. */}
         <section
-          className="relative flex h-auto w-full items-center justify-center bg-cover bg-top md:h-[600px]"
+          id="inicio"
+          className="relative flex h-auto w-full scroll-mt-20 items-center justify-center bg-cover bg-top md:h-[600px]"
           style={{ backgroundImage: `url(${BgHero.src})` }}
         >
           {/* Capa oscura para dar contraste al texto sobre la imagen */}
@@ -51,13 +57,13 @@ export default function Home() {
                 {hero.applyLabel}
               </button>
 
-              {/* Botón tipo "field" (acción secundaria) */}
-              <button
-                type="button"
-                className="cursor-pointer rounded-full border-2 border-white/80 px-8 py-3 text-base leading-[23px] font-semibold text-white transition-colors hover:bg-white/10"
-              >
-                {hero.fieldLabel}
-              </button>
+              {/* Botón tipo "field" (acción secundaria) con ícono de regalo.
+                  Abre el pop-up "Cómo es tu Navidad" con el filtro por taxonomía. */}
+              <GiftFinderButton
+                label={hero.fieldLabel}
+                icon={<GiftIcon />}
+                className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border-2 border-white/80 px-8 py-3 text-base leading-[23px] font-semibold text-white transition-colors hover:bg-white/10"
+              />
             </div>
           </div>
         </section>

@@ -60,7 +60,7 @@ export default function Catalog() {
     <section
       id="catalog"
       aria-label="Detalles que enamoran"
-      className="mx-auto w-full max-w-7xl px-6 py-20"
+      className="mx-auto w-full max-w-7xl scroll-mt-20 px-6 py-20"
     >
       {/* Encabezado de la sección */}
       <div className="flex flex-col items-center gap-4 text-center">

@@ -278,5 +278,89 @@
       "Uso": "Cortinas de interior"
     },
     "image": "cortinero-p.jpeg"
+  },
+  {
+    "id": "prod-21",
+    "title": "Camino de Mesa Rosado",
+    "category": "Mesa",
+    "style": "Brillante",
+    "price": 29.5,
+    "description": "Camino de mesa en rosa coral que ilumina la mesa y combina con decoraciones modernas de temporada.",
+    "specs": {
+      "Medidas": "140 x 35 cm",
+      "Material": "Tela de poliéster",
+      "Cuidado": "Lavado a mano"
+    },
+    "image": "camino-de-mesa-rosado.jpeg"
+  },
+  {
+    "id": "prod-22",
+    "title": "Cojín Muñeco de Nieve",
+    "category": "Cojines",
+    "style": "Clásica",
+    "price": 26.0,
+    "description": "Cojín decorativo con motivo de muñeco de nieve, un clásico navideño para el sofá o la cama.",
+    "specs": {
+      "Medidas": "45 x 45 cm",
+      "Material": "Felpa y bordado",
+      "Cuidado": "Lavado a mano"
+    },
+    "image": "cojin-muneco-nieve.jpeg"
+  },
+  {
+    "id": "prod-23",
+    "title": "Cojín Reno Café",
+    "category": "Cojines",
+    "style": "Natural",
+    "price": 27.5,
+    "description": "Cojín con figura de reno en tono café, ideal para aportar calidez y un aire natural a la decoración.",
+    "specs": {
+      "Medidas": "45 x 45 cm",
+      "Material": "Felpa y bordado",
+      "Cuidado": "Lavado a mano"
+    },
+    "image": "cojin-reno-cafe.jpeg"
+  },
+  {
+    "id": "prod-24",
+    "title": "Cubre Sillas Modelo 2",
+    "category": "Cubre Sillas",
+    "style": "Clásica",
+    "price": 44.0,
+    "description": "Segundo modelo de funda para sillas que renueva el comedor con un acabado navideño.",
+    "specs": {
+      "Contenido": "4 unidades",
+      "Material": "Tela elástica",
+      "Uso": "Sillas estándar"
+    },
+    "image": "cubre-sillas-2.jpeg"
+  },
+  {
+    "id": "prod-25",
+    "title": "Cubre Sillas Claros",
+    "category": "Cubre Sillas",
+    "style": "Natural",
+    "price": 44.0,
+    "description": "Fundas de silla en tonos claros para una mesa elegante y luminosa en las cenas navideñas.",
+    "specs": {
+      "Contenido": "4 unidades",
+      "Material": "Tela elástica",
+      "Uso": "Sillas estándar"
+    },
+    "image": "cubre-sillas-claros.jpeg"
+  },
+  {
+    "id": "prod-26",
+    "title": "Reloj Navideño",
+    "category": "Decoración",
+    "style": "Clásica",
+    "price": 34.99,
+    "description": "Reloj decorativo de temática navideña, un detalle funcional para vestir cualquier ambiente.",
+    "specs": {
+      "Medidas": "30 cm de alto",
+      "Material": "Madera y metal",
+      "Uso": "Decorativo de interior"
+    },
+    "image": "reloj.jpeg"
   }
 ]

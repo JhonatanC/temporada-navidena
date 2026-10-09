@@ -1,4 +1,6 @@
 import PosterVideo from "../../assets/camino-de-mesa-rojo.jpeg";
+import GiftFinderButton from "../gift-finder/GiftFinderButton";
+import GiftIcon from "./partials/GiftIcon";
 
 /**
  * Sección promocional: fila de dos columnas al 50% (texto a la izquierda y
@@ -10,7 +12,7 @@ const promo = {
   description:
     "Enciende cada rincón de tu hogar con detalles que cuentan historias: luces cálidas, texturas suaves y el aroma inconfundible de la temporada. Déjate inspirar por nuestro video y descubre cómo transformar tu casa en un escenario lleno de Navidad.",
   primaryLabel: "Ver catálogo",
-  secondaryLabel: "Contáctanos",
+  secondaryLabel: "Encuentra tu regalo",
   // Video mock de ejemplo (fuente pública CC0 de MDN). Reemplazar por el video real.
   videoSrc: "https://mdn.github.io/shared-assets/videos/flower.mp4",
   poster: PosterVideo.src,
@@ -21,7 +23,7 @@ export default function Promo() {
     <section
       id="promo"
       aria-label="Video promocional de Navidad"
-      className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-20 md:grid-cols-2 md:gap-16"
+      className="mx-auto grid max-w-7xl scroll-mt-20 items-center gap-10 px-6 py-20 md:grid-cols-2 md:gap-16"
     >
       {/* Columna izquierda (50%): título, párrafo y botones */}
       <div className="flex flex-col items-start gap-6">
@@ -41,13 +43,12 @@ export default function Promo() {
             {promo.primaryLabel}
           </button>
 
-          {/* Botón secundario */}
-          <button
-            type="button"
-            className="cursor-pointer rounded-full border-2 border-vinotinto px-8 py-3 text-base leading-[23px] font-semibold text-vinotinto transition-colors hover:bg-vinotinto hover:text-white"
-          >
-            {promo.secondaryLabel}
-          </button>
+          {/* Botón secundario con ícono de regalo: abre el pop-up "Cómo es tu Navidad" */}
+          <GiftFinderButton
+            label={promo.secondaryLabel}
+            icon={<GiftIcon />}
+            className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border-2 border-vinotinto px-8 py-3 text-base leading-[23px] font-semibold text-vinotinto transition-colors hover:bg-vinotinto hover:text-white"
+          />
         </div>
       </div>
 

@@ -1,4 +1,6 @@
+import GiftFinderButton from "../gift-finder/GiftFinderButton";
 import StarIcon from "./partials/StarIcon";
+import GiftIcon from "./partials/GiftIcon";
 
 /**
  * Sección CTA a ancho completo (100% del viewport, con su contenido centrado
@@ -10,11 +12,11 @@ import StarIcon from "./partials/StarIcon";
  * Textos y botón son mock: se reemplazarán por el contenido real.
  */
 const cta = {
-  title: "Una Navidad que se siente en casa",
-  subtitle: "Envío gratis en compras superiores a $50",
+  title: "Un recuerdo, una sonrisa",
+  subtitle: "Un recuerdo para siempre",
   description:
-    "Aprovecha nuestra promoción de temporada y llena cada rincón de magia: coronas, esferas y guirnaldas seleccionadas para ti. La oferta termina cuando se apagan las luces.",
-  buttonLabel: "Comprar ahora",
+    "Hay una Navidad para cada persona. Encuentra ese pequeño detalle que va con la tuya.",
+  buttonLabel: "Encuentra tu regalo",
 };
 
 export default function Cta() {
@@ -22,7 +24,7 @@ export default function Cta() {
     <section
       id="cta"
       aria-label="Promoción de temporada"
-      className="w-full bg-verde-profundo px-6 py-16 md:px-12 md:py-20"
+      className="w-full scroll-mt-20 bg-verde-profundo px-6 py-18 md:px-12 md:py-20"
     >
       {/* Fila de dos columnas (50% / 50%), centrada en un contenedor de ancho máximo como las secciones Benefits y Promo */}
       <div className="mx-auto grid w-full max-w-7xl items-center gap-10 md:grid-cols-2 md:gap-16">
@@ -44,12 +46,12 @@ export default function Cta() {
           <span className="text-amarillo">
             <StarIcon />
           </span>
-          <button
-            type="button"
-            className="cursor-pointer rounded-full bg-amarillo px-8 py-3 text-base leading-[23px] font-semibold text-verde-oliva transition-colors hover:bg-amarillo/90"
-          >
-            {cta.buttonLabel}
-          </button>
+          {/* Botón amarillo: abre el pop-up "Cómo es tu Navidad" */}
+          <GiftFinderButton
+            label={cta.buttonLabel}
+            icon={<GiftIcon />}
+            className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-full bg-amarillo px-8 py-3 text-base leading-[23px] font-semibold text-verde-oliva transition-colors hover:bg-amarillo/90"
+          />
         </div>
       </div>
     </section>

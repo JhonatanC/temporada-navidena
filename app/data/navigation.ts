@@ -1,13 +1,17 @@
-// Enlaces de navegación mock. Se reemplazarán por las rutas reales más adelante.
+// Enlaces de navegación del sitio. Cada ancla (`#id`) apunta a una sección de la
+// página principal, por lo que el navbar hace scroll suave hacia ella.
 export interface NavLink {
   label: string;
   href: string;
 }
 
 export const navLinks: NavLink[] = [
-  { label: "Inicio", href: "/" },
-  { label: "Catálogo", href: "/catalogo" },
-  { label: "Categorías", href: "/categorias" },
-  { label: "Nosotros", href: "/nosotros" },
-  { label: "Contacto", href: "/contacto" },
+  // Inicio: el hero junto con las cajas de beneficios (parte superior).
+  { label: "Inicio", href: "#inicio" },
+  // Nosotros: sección con el video informativo y su descripción.
+  { label: "Nosotros", href: "#promo" },
+  // Catálogo: "Detalles que enamoran" con las tarjetas de producto.
+  { label: "Catálogo", href: "#catalog" },
+  // Contacto: el call to action de la sección CTA.
+  { label: "Contacto", href: "#cta" },
 ];
