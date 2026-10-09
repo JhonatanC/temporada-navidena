@@ -7,6 +7,9 @@
   --color-verde-bosque: #182602;
   --color-verde-oliva: #2d4003;
   --color-fondo: #f2f2f2;
+  /* Verde profundo y amarillo para la sección CTA (a petición del usuario). */
+  --color-verde-profundo: #0d3b2d;
+  --color-amarillo: #f7c948;
 }
 
 @theme inline {

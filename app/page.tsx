@@ -2,6 +2,8 @@ import BgHero from "./assets/bg-main.jpg";
 import Navbar from "./components/navbar/Navbar";
 import Benefits from "./components/benefits/Benefits";
 import Promo from "./components/promo/Promo";
+import Catalog from "./components/catalog/Catalog";
+import Cta from "./components/cta/Cta";
 
 // Datos mock del hero. Se reemplazarán por el contenido real más adelante.
 const hero = {
@@ -65,6 +67,12 @@ export default function Home() {
 
         {/* Sección promocional: fila texto + video mock */}
         <Promo />
+
+        {/* Catálogo: "Detalles que enamoran" con tarjetas de producto y modal */}
+        <Catalog />
+
+        {/* Sección CTA a ancho completo: texto + estrella y botón */}
+        <Cta />
       </main>
       <footer></footer>
     </div>
