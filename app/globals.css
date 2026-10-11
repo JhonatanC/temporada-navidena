@@ -10,6 +10,9 @@
   /* Verde profundo y amarillo para la sección CTA (a petición del usuario). */
   --color-verde-profundo: #0d3b2d;
   --color-amarillo: #f7c948;
+  /* Verdes de marca de WhatsApp: solo para el botón flotante de contacto. */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-oscuro: #075e54;
 }
 
 @theme inline {

@@ -1,3 +1,5 @@
+"use client";
+
 import BgHero from "./assets/bg-main.jpg";
 import Navbar from "./components/navbar/Navbar";
 import Benefits from "./components/benefits/Benefits";
@@ -6,6 +8,7 @@ import Catalog from "./components/catalog/Catalog";
 import Cta from "./components/cta/Cta";
 import GiftFinderButton from "./components/gift-finder/GiftFinderButton";
 import GiftIcon from "./components/hero/partials/GiftIcon";
+import Footer from "./components/footer/Footer";
 
 // Datos mock del hero. Se reemplazarán por el contenido real más adelante.
 const hero = {
@@ -50,12 +53,25 @@ export default function Home() {
 
             <div className="flex flex-col gap-4 sm:flex-row">
               {/* Botón tipo "apply" (acción principal) */}
-              <button
-                type="button"
+              <a
+                href="#catalog"
+                onClick={(event) => {
+                  const target = document.getElementById("catalog");
+                  if (target) {
+                    event.preventDefault();
+                    const prefersReducedMotion = window.matchMedia(
+                      "(prefers-reduced-motion: reduce)",
+                    ).matches;
+                    target.scrollIntoView({
+                      behavior: prefersReducedMotion ? "auto" : "smooth",
+                      block: "start",
+                    });
+                  }
+                }}
                 className="cursor-pointer rounded-full bg-vinotinto px-8 py-3 text-base leading-[23px] font-semibold text-white transition-colors hover:bg-rosa-coral"
               >
                 {hero.applyLabel}
-              </button>
+              </a>
 
               {/* Botón tipo "field" (acción secundaria) con ícono de regalo.
                   Abre el pop-up "Cómo es tu Navidad" con el filtro por taxonomía. */}
@@ -80,7 +96,8 @@ export default function Home() {
         {/* Sección CTA a ancho completo: texto + estrella y botón */}
         <Cta />
       </main>
-      <footer></footer>
+      {/* Pie de página: ancho completo, alto fijo y año dinámico */}
+      <Footer />
     </div>
   );
 }

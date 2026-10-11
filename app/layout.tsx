@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cinzel_Decorative, Inter } from "next/font/google";
+import WhatsAppButton from "./components/whatsapp/WhatsAppButton";
 import "./globals.css";
 
 // Inter: textos generales, párrafos, precios y especificaciones.
@@ -30,6 +31,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         className={`${inter.className} min-h-full flex flex-col bg-fondo text-verde-bosque`}
       >
         {children}
+        {/* Botón flotante de WhatsApp: visible en todo el sitio */}
+        <WhatsAppButton />
       </body>
     </html>
   );

@@ -29,14 +29,16 @@ const benefits = [
 ];
 
 export default function Benefits() {
-  // Margen top negativo = la mitad de la altura de la caja (221px / 2 = 110.5px):
-  // p-8 (64) + ícono h-14 (56) + gap-4 x2 (32) + título (27) + descripción 2 líneas (42).
+  // En móvil las cajas van debajo del hero con un margen top (`mt-10`) que las
+  // separa. Desde `md` se superponen con un margen top negativo = la mitad de la
+  // altura de la caja (221px / 2 = 110.5px): p-8 (64) + ícono h-14 (56) +
+  // gap-4 x2 (32) + título (27) + descripción 2 líneas (42).
   // Si cambia el contenido de la caja, ajustar este valor.
   return (
     <section
       id="benefits"
       aria-label="Beneficios"
-      className="relative z-10 mx-auto -mt-[110.5px] grid max-w-7xl gap-6 px-6 md:grid-cols-3"
+      className="relative z-10 mx-auto mt-10 grid max-w-7xl gap-6 px-6 md:-mt-[110.5px] md:grid-cols-3"
     >
       {benefits.map(({ id, title, description, Icon }) => (
         <article

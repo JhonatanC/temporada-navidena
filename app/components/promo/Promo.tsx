@@ -1,3 +1,5 @@
+"use client";
+
 import PosterVideo from "../../assets/camino-de-mesa-rojo.jpeg";
 import GiftFinderButton from "../gift-finder/GiftFinderButton";
 import GiftIcon from "./partials/GiftIcon";
@@ -36,12 +38,25 @@ export default function Promo() {
 
         <div className="flex flex-col gap-4 sm:flex-row">
           {/* Botón principal */}
-          <button
-            type="button"
+          <a
+            href="#catalog"
+            onClick={(event) => {
+              const target = document.getElementById("catalog");
+              if (target) {
+                event.preventDefault();
+                const prefersReducedMotion = window.matchMedia(
+                  "(prefers-reduced-motion: reduce)",
+                ).matches;
+                target.scrollIntoView({
+                  behavior: prefersReducedMotion ? "auto" : "smooth",
+                  block: "start",
+                });
+              }
+            }}
             className="cursor-pointer rounded-full bg-vinotinto px-8 py-3 text-base leading-[23px] font-semibold text-white transition-colors hover:bg-rosa-coral"
           >
             {promo.primaryLabel}
-          </button>
+          </a>
 
           {/* Botón secundario con ícono de regalo: abre el pop-up "Cómo es tu Navidad" */}
           <GiftFinderButton
@@ -65,10 +80,7 @@ export default function Promo() {
           Tu navegador no soporta la etiqueta de video.
         </video>
 
-        {/* Insignia que anticipa la llegada de un nuevo video */}
-        <span className="pointer-events-none absolute top-4 left-4 rounded-full bg-vinotinto/90 px-4 py-1 text-sm leading-[21px] font-semibold text-white">
-          Nuevo video
-        </span>
+
       </div>
     </section>
   );

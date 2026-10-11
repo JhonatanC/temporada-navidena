@@ -6,29 +6,27 @@ import { navLinks } from "@/app/data/navigation";
 import MenuIcon from "./partials/MenuIcon";
 import CloseIcon from "./partials/CloseIcon";
 
-/** Tiempo (ms) sin scroll tras el cual la barra se oculta al detenerse. */
-const HIDE_DELAY = 300;
-
 /** Altura aproximada de la barra: al superarla, el fondo pasa de transparente a sólido. */
 const NAVBAR_HEIGHT = 64;
 
 /**
  * Barra de navegación principal, fija en la parte superior.
  * - Transparente mientras se ve el hero; pasa a fondo sólido al dejar el hero atrás.
- * - Se muestra mientras hay scroll (en cualquier dirección) y se oculta al detenerse.
+ * - Se oculta al hacer scroll hacia abajo y reaparece al hacer scroll hacia arriba.
  * - En tablet y escritorio muestra los enlaces en línea; en móvil, menú hamburguesa.
  */
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   // Fondo sólido una vez se supera el hero (transparente mientras se ve el hero).
   const [isSolid, setIsSolid] = useState(false);
-  // Visible mientras hay scroll; se oculta al detenerse.
+  // Se oculta al bajar y se muestra al subir.
   const [isVisible, setIsVisible] = useState(true);
 
   // Detecta el scroll para (1) cambiar el fondo al salir del hero y
-  // (2) mostrar la barra mientras hay actividad y ocultarla al detenerse.
+  // (2) ocultar la barra al bajar, mostrarla al subir (en la parte superior
+  // siempre permanece visible).
   useEffect(() => {
-    let hideTimeout: ReturnType<typeof setTimeout>;
+    let prevY = window.scrollY;
 
     const handleScroll = () => {
       const y = window.scrollY;
@@ -41,20 +39,20 @@ export default function Navbar() {
         heroBottom !== undefined ? heroBottom <= NAVBAR_HEIGHT : y > 80,
       );
 
-      // Cualquier movimiento la muestra; al detenerse, se oculta.
-      setIsVisible(true);
-      clearTimeout(hideTimeout);
-      if (y > 8) {
-        hideTimeout = setTimeout(() => setIsVisible(false), HIDE_DELAY);
+      // Scroll down → ocultar; scroll up → mostrar; en la parte superior, visible.
+      if (y <= 8) {
+        setIsVisible(true);
+      } else if (y > prevY) {
+        setIsVisible(false);
+      } else if (y < prevY) {
+        setIsVisible(true);
       }
+      prevY = y;
     };
 
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      clearTimeout(hideTimeout);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Con el menú móvil abierto la barra permanece visible para poder cerrarlo.
