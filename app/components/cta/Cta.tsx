@@ -1,22 +1,22 @@
-import GiftFinderButton from "../gift-finder/GiftFinderButton";
+import { buildWhatsAppHref } from "../../data/whatsapp";
+import WhatsAppIcon from "../whatsapp/partials/WhatsAppIcon";
 import StarIcon from "./partials/StarIcon";
-import GiftIcon from "./partials/GiftIcon";
 
 /**
  * Sección CTA a ancho completo (100% del viewport, con su contenido centrado
  * en un contenedor de ancho máximo, igual que Benefits y Promo).
  * Fila de dos columnas: a la izquierda un bloque de texto (título blanco,
  * subtítulo amarillo y párrafo) y a la derecha una estrella con un botón
- * amarillo de texto verde.
+ * amarillo que lleva directo a WhatsApp.
  * Fondo verde profundo (#0d3b2d) en todo el bloque.
- * Textos y botón son mock: se reemplazarán por el contenido real.
+ * Los textos son mock: se reemplazarán por el contenido real.
  */
 const cta = {
   title: "Un recuerdo, una sonrisa",
   subtitle: "Un recuerdo para siempre",
   description:
     "Hay una Navidad para cada persona. Encuentra ese pequeño detalle que va con la tuya.",
-  buttonLabel: "Encuentra tu regalo",
+  buttonLabel: "Escríbenos por WhatsApp",
 };
 
 export default function Cta() {
@@ -46,12 +46,16 @@ export default function Cta() {
           <span className="text-amarillo">
             <StarIcon />
           </span>
-          {/* Botón amarillo: abre el pop-up "Cómo es tu Navidad" */}
-          <GiftFinderButton
-            label={cta.buttonLabel}
-            icon={<GiftIcon />}
+          {/* Botón amarillo: enlace directo a WhatsApp (abre la conversación) */}
+          <a
+            href={buildWhatsAppHref()}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-full bg-amarillo px-8 py-3 text-base leading-[23px] font-semibold text-verde-oliva transition-colors hover:bg-amarillo/90"
-          />
+          >
+            <WhatsAppIcon className="h-5 w-5" />
+            {cta.buttonLabel}
+          </a>
         </div>
       </div>
     </section>

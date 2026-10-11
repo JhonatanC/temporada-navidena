@@ -1,13 +1,5 @@
+import { buildWhatsAppHref } from "../../data/whatsapp";
 import WhatsAppIcon from "./partials/WhatsAppIcon";
-
-/**
- * Número de WhatsApp en formato internacional, sin espacios ni "+".
- * Corresponde a +57 315 3412432.
- */
-const WHATSAPP_NUMBER = "573153412432";
-
-/** Mensaje que se precarga en el chat (el usuario puede editarlo antes de enviar). */
-const WHATSAPP_MESSAGE = "¡Hola! Me interesa su decoración navideña.";
 
 /**
  * Botón flotante de WhatsApp en la esquina inferior derecha.
@@ -16,9 +8,7 @@ const WHATSAPP_MESSAGE = "¡Hola! Me interesa su decoración navideña.";
  * se solape con ellos cuando estén abiertos.
  */
 export default function WhatsAppButton() {
-  const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    WHATSAPP_MESSAGE,
-  )}`;
+  const href = buildWhatsAppHref();
 
   return (
     <a
