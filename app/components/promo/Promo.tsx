@@ -13,7 +13,7 @@ import GiftIcon from "./partials/GiftIcon";
 const promo = {
   title: "Vive la magia de una Navidad hecha a tu medida",
   description:
-    "Enciende cada rincón de tu hogar con detalles que cuentan historias: luces cálidas, texturas suaves y el aroma inconfundible de la temporada. Déjate inspirar por nuestro video y descubre cómo transformar tu casa en un escenario lleno de Navidad.",
+    "Enciende cada rincón de tu hogar con detalles que cuentan historias: luces cálidas, texturas suaves y el aroma inconfundible de la temporada. Déjate inspirar por nuestros productos y descubre cómo transformar tu casa en un escenario lleno de Navidad.",
   primaryLabel: "Ver catálogo",
   secondaryLabel: "Encuentra tu regalo",
   // Imagen de una sala decorada con motivos navideños.
@@ -36,7 +36,7 @@ export default function Promo() {
           {promo.description}
         </p>
 
-        <div className="flex flex-col gap-4 sm:flex-row">
+        <div className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
           {/* Botón principal */}
           <a
             href="#catalog"
@@ -53,7 +53,7 @@ export default function Promo() {
                 });
               }
             }}
-            className="cursor-pointer rounded-full bg-vinotinto px-8 py-3 text-base leading-[23px] font-semibold text-white transition-colors hover:bg-rosa-coral"
+            className="w-full cursor-pointer rounded-full bg-vinotinto px-8 py-3 text-center text-base leading-[23px] font-semibold text-white transition-colors hover:bg-rosa-coral sm:w-auto"
           >
             {promo.primaryLabel}
           </a>
@@ -62,7 +62,7 @@ export default function Promo() {
           <GiftFinderButton
             label={promo.secondaryLabel}
             icon={<GiftIcon />}
-            className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border-2 border-vinotinto px-8 py-3 text-base leading-[23px] font-semibold text-vinotinto transition-colors hover:bg-vinotinto hover:text-white"
+            className="inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-full border-2 border-vinotinto px-8 py-3 text-base leading-[23px] font-semibold text-vinotinto transition-colors hover:bg-vinotinto hover:text-white sm:w-auto"
           />
         </div>
       </div>
