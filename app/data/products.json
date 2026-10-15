@@ -4,13 +4,9 @@
     "title": "Cojín Navideño Blanco",
     "category": "Cojines",
     "style": "Natural",
-    "price": 24.99,
+    "price": 90000,
+    "priceFrom": false,
     "description": "Cojín de felpa suave en tono blanco con detalles navideños bordados, ideal para dar calidez al sofá o a la cama.",
-    "specs": {
-      "Medidas": "45 x 45 cm",
-      "Material": "Felpa de poliéster",
-      "Cuidado": "Lavado a mano"
-    },
     "image": "cojin-blanco-navidad.jpeg"
   },
   {
@@ -18,13 +14,9 @@
     "title": "Cojín Muñeco de Nieve Rosado",
     "category": "Cojines",
     "style": "Brillante",
-    "price": 27.5,
+    "price": 75000,
+    "priceFrom": false,
     "description": "Cojín decorativo con motivo de muñeco de nieve en tonos rosados, un detalle dulce para la sala.",
-    "specs": {
-      "Medidas": "45 x 45 cm",
-      "Material": "Felpa y bordado",
-      "Cuidado": "Lavado a mano"
-    },
     "image": "cojin-muneco-hielo-rosado.jpeg"
   },
   {
@@ -32,13 +24,9 @@
     "title": "Cojín Noel Rojo",
     "category": "Cojines",
     "style": "Clásica",
-    "price": 26.0,
+    "price": 60000,
+    "priceFrom": false,
     "description": "Cojín en rojo intenso con la palabra Noel, perfecto para sumar espíritu festivo a tu decoración.",
-    "specs": {
-      "Medidas": "45 x 45 cm",
-      "Material": "Poliéster antialérgico",
-      "Cuidado": "Lavado a mano"
-    },
     "image": "cojin-noel-rojo.jpeg"
   },
   {
@@ -46,13 +34,9 @@
     "title": "Cojín Noel Rosado",
     "category": "Cojines",
     "style": "Brillante",
-    "price": 26.0,
+    "price": 60000,
+    "priceFrom": false,
     "description": "La versión en rosa coral del clásico cojín Noel, ideal para decoraciones suaves y modernas.",
-    "specs": {
-      "Medidas": "45 x 45 cm",
-      "Material": "Poliéster antialérgico",
-      "Cuidado": "Lavado a mano"
-    },
     "image": "cojin-noel-rosado.jpeg"
   },
   {
@@ -60,27 +44,18 @@
     "title": "Cojín Navideño Rojo",
     "category": "Cojines",
     "style": "Clásica",
-    "price": 24.99,
+    "price": 75000,
+    "priceFrom": false,
     "description": "Cojín clásico en tono vinotinto para aportar contraste y calidez a cualquier rincón del hogar.",
-    "specs": {
-      "Medidas": "45 x 45 cm",
-      "Material": "Felpa de poliéster",
-      "Cuidado": "Lavado a mano"
-    },
     "image": "cojin-rojo.jpeg"
   },
   {
     "id": "prod-06",
-    "title": "Muñecos Noel Rojo",
+    "title": "Pareja de Muñecos Noel Rojo",
     "category": "Muñecos",
     "style": "Clásica",
-    "price": 32.0,
-    "description": "Adorno de mesa en forma de muñeco navideño con gorro y detalles en rojo.",
-    "specs": {
-      "Altura": "35 cm",
-      "Material": "Tela y relleno de fibra",
-      "Uso": "Decorativo de interior"
-    },
+    "price": 500000,
+    "description": "Pareja de muñecos navideños de mesa con gorro y detalles en rojo, ideales para decorar juntos.",
     "image": "muneco-noel-rojo.jpeg"
   },
   {
@@ -88,13 +63,8 @@
     "title": "Muñeco Reno Macho",
     "category": "Muñecos",
     "style": "Natural",
-    "price": 34.5,
+    "price": 130000,
     "description": "Muñeco decorativo de reno pensado para acompañar la decoración de la sala.",
-    "specs": {
-      "Altura": "40 cm",
-      "Material": "Tela y relleno de fibra",
-      "Uso": "Decorativo de interior"
-    },
     "image": "muneco-reno-macho.jpeg"
   },
   {
@@ -102,13 +72,8 @@
     "title": "Muñeca Reno Mujer",
     "category": "Muñecos",
     "style": "Natural",
-    "price": 34.5,
+    "price": 130000,
     "description": "Muñeca de reno con detalles suaves, ideal para formar una pareja decorativa de temporada.",
-    "specs": {
-      "Altura": "40 cm",
-      "Material": "Tela y relleno de fibra",
-      "Uso": "Decorativo de interior"
-    },
     "image": "muneco-reno-mujer.jpeg"
   },
   {
@@ -116,13 +81,8 @@
     "title": "Set de Muñecos de Sala",
     "category": "Muñecos",
     "style": "Natural",
-    "price": 59.99,
+    "price": 320000,
     "description": "Conjunto de muñecos navideños para decorar la sala y crear una escena llena de temporada.",
-    "specs": {
-      "Contenido": "Set decorativo",
-      "Material": "Tela y relleno de fibra",
-      "Uso": "Decorativo de interior"
-    },
     "image": "munecos-sala.jpeg"
   },
   {
@@ -130,13 +90,8 @@
     "title": "Pareja de Renos Decorativos",
     "category": "Muñecos",
     "style": "Natural",
-    "price": 64.0,
+    "price": 240000,
     "description": "Pareja de renos coordinados que aportan un toque tierno y elegante a la decoración.",
-    "specs": {
-      "Contenido": "2 unidades",
-      "Material": "Tela y relleno de fibra",
-      "Uso": "Decorativo de interior"
-    },
     "image": "reno-parejas.jpeg"
   },
   {
@@ -144,13 +99,8 @@
     "title": "Pie de Árbol Rojo",
     "category": "Pies de Árbol",
     "style": "Clásica",
-    "price": 39.99,
+    "price": 140000,
     "description": "Falda para la base del árbol en tono rojo que oculta el soporte y aporta un acabado limpio.",
-    "specs": {
-      "Diámetro": "90 cm",
-      "Material": "Tela de poliéster",
-      "Uso": "Árboles de hasta 2 m"
-    },
     "image": "pie-de-arbol-rojo.jpeg"
   },
   {
@@ -158,13 +108,8 @@
     "title": "Pie de Árbol Rojo Clásico",
     "category": "Pies de Árbol",
     "style": "Clásica",
-    "price": 42.0,
+    "price": 140000,
     "description": "Modelo clásico de pie de árbol en rojo con caída amplia y bordes definidos.",
-    "specs": {
-      "Diámetro": "95 cm",
-      "Material": "Tela de poliéster",
-      "Uso": "Árboles de hasta 2 m"
-    },
     "image": "pie-de-arbol-rojo-1.jpeg"
   },
   {
@@ -172,13 +117,8 @@
     "title": "Pie de Árbol Rosado",
     "category": "Pies de Árbol",
     "style": "Brillante",
-    "price": 39.99,
+    "price": 140000,
     "description": "Falda para árbol en tono rosa coral, ideal para decoraciones modernas y luminosas.",
-    "specs": {
-      "Diámetro": "90 cm",
-      "Material": "Tela de poliéster",
-      "Uso": "Árboles de hasta 2 m"
-    },
     "image": "pie-de-arbol-rosado.jpeg"
   },
   {
@@ -186,13 +126,8 @@
     "title": "Camino de Mesa Rojo",
     "category": "Mesa",
     "style": "Clásica",
-    "price": 29.5,
+    "price": 100000,
     "description": "Camino de mesa en rojo profundo para vestir la mesa de las cenas navideñas.",
-    "specs": {
-      "Medidas": "140 x 35 cm",
-      "Material": "Tela de poliéster",
-      "Cuidado": "Lavado a mano"
-    },
     "image": "camino-de-mesa-rojo.jpeg"
   },
   {
@@ -200,13 +135,9 @@
     "title": "Individual Rosado",
     "category": "Mesa",
     "style": "Brillante",
-    "price": 12.99,
+    "price": 35000,
+    "unit": "c/u",
     "description": "Individual en tono rosado que protege y realza cada puesto de la mesa.",
-    "specs": {
-      "Medidas": "35 x 45 cm",
-      "Material": "Tela laminada",
-      "Cuidado": "Limpieza con paño húmedo"
-    },
     "image": "individual-rosado.jpeg"
   },
   {
@@ -214,13 +145,9 @@
     "title": "Set de Individuales Claros",
     "category": "Mesa",
     "style": "Natural",
-    "price": 34.99,
+    "price": 120000,
+    "unit": "c/u",
     "description": "Juego de individuales en tonos claros para una mesa elegante y luminosa.",
-    "specs": {
-      "Contenido": "4 unidades",
-      "Medidas": "35 x 45 cm",
-      "Material": "Tela laminada"
-    },
     "image": "invididuales-claros.jpeg"
   },
   {
@@ -228,13 +155,9 @@
     "title": "Cubre Sillas Rojo",
     "category": "Cubre Sillas",
     "style": "Clásica",
-    "price": 44.0,
+    "price": 40000,
+    "unit": "c/u",
     "description": "Funda de silla en rojo que transforma por completo el comedor en segundos.",
-    "specs": {
-      "Contenido": "4 unidades",
-      "Material": "Tela elástica",
-      "Uso": "Sillas estándar"
-    },
     "image": "cobre-sillas-rojo.jpeg"
   },
   {
@@ -242,13 +165,8 @@
     "title": "Cortinero Modelo G",
     "category": "Cortineros",
     "style": "Clásica",
-    "price": 18.99,
+    "price": 20000,
     "description": "Cortinero decorativo para sujetar las cortinas con un estilo navideño.",
-    "specs": {
-      "Contenido": "Par",
-      "Material": "Metal y tela",
-      "Uso": "Cortinas de interior"
-    },
     "image": "cortinero-g.jpeg"
   },
   {
@@ -256,13 +174,8 @@
     "title": "Cortinero Modelo H",
     "category": "Cortineros",
     "style": "Natural",
-    "price": 18.99,
+    "price": 20000,
     "description": "Cortinero decorativo con acabado festivo, perfecto para dar el toque final a la ventana.",
-    "specs": {
-      "Contenido": "Par",
-      "Material": "Metal y tela",
-      "Uso": "Cortinas de interior"
-    },
     "image": "cortinero-h.jpeg"
   },
   {
@@ -270,13 +183,8 @@
     "title": "Cortinero Modelo P",
     "category": "Cortineros",
     "style": "Brillante",
-    "price": 18.99,
+    "price": 20000,
     "description": "Cortinero decorativo de la colección navideña para cortinas de cualquier ambiente.",
-    "specs": {
-      "Contenido": "Par",
-      "Material": "Metal y tela",
-      "Uso": "Cortinas de interior"
-    },
     "image": "cortinero-p.jpeg"
   },
   {
@@ -284,13 +192,8 @@
     "title": "Camino de Mesa Rosado",
     "category": "Mesa",
     "style": "Brillante",
-    "price": 29.5,
+    "price": 100000,
     "description": "Camino de mesa en rosa coral que ilumina la mesa y combina con decoraciones modernas de temporada.",
-    "specs": {
-      "Medidas": "140 x 35 cm",
-      "Material": "Tela de poliéster",
-      "Cuidado": "Lavado a mano"
-    },
     "image": "camino-de-mesa-rosado.jpeg"
   },
   {
@@ -298,13 +201,9 @@
     "title": "Cojín Muñeco de Nieve",
     "category": "Cojines",
     "style": "Clásica",
-    "price": 26.0,
+    "price": 75000,
+    "priceFrom": false,
     "description": "Cojín decorativo con motivo de muñeco de nieve, un clásico navideño para el sofá o la cama.",
-    "specs": {
-      "Medidas": "45 x 45 cm",
-      "Material": "Felpa y bordado",
-      "Cuidado": "Lavado a mano"
-    },
     "image": "cojin-muneco-nieve.jpeg"
   },
   {
@@ -312,13 +211,9 @@
     "title": "Cojín Reno Café",
     "category": "Cojines",
     "style": "Natural",
-    "price": 27.5,
+    "price": 90000,
+    "priceFrom": false,
     "description": "Cojín con figura de reno en tono café, ideal para aportar calidez y un aire natural a la decoración.",
-    "specs": {
-      "Medidas": "45 x 45 cm",
-      "Material": "Felpa y bordado",
-      "Cuidado": "Lavado a mano"
-    },
     "image": "cojin-reno-cafe.jpeg"
   },
   {
@@ -326,13 +221,9 @@
     "title": "Cubre Sillas Modelo 2",
     "category": "Cubre Sillas",
     "style": "Clásica",
-    "price": 44.0,
+    "price": 40000,
+    "unit": "c/u",
     "description": "Segundo modelo de funda para sillas que renueva el comedor con un acabado navideño.",
-    "specs": {
-      "Contenido": "4 unidades",
-      "Material": "Tela elástica",
-      "Uso": "Sillas estándar"
-    },
     "image": "cubre-sillas-2.jpeg"
   },
   {
@@ -340,13 +231,9 @@
     "title": "Cubre Sillas Claros",
     "category": "Cubre Sillas",
     "style": "Natural",
-    "price": 44.0,
+    "price": 40000,
+    "unit": "c/u",
     "description": "Fundas de silla en tonos claros para una mesa elegante y luminosa en las cenas navideñas.",
-    "specs": {
-      "Contenido": "4 unidades",
-      "Material": "Tela elástica",
-      "Uso": "Sillas estándar"
-    },
     "image": "cubre-sillas-claros.jpeg"
   },
   {
@@ -354,13 +241,8 @@
     "title": "Reloj Navideño",
     "category": "Decoración",
     "style": "Clásica",
-    "price": 34.99,
+    "price": 100000,
     "description": "Reloj decorativo de temática navideña, un detalle funcional para vestir cualquier ambiente.",
-    "specs": {
-      "Medidas": "30 cm de alto",
-      "Material": "Madera y metal",
-      "Uso": "Decorativo de interior"
-    },
     "image": "reloj.jpeg"
   }
 ]

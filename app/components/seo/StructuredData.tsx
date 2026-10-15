@@ -1,12 +1,7 @@
+import { CURRENCY } from "../../data/currency";
 import { products } from "../../data/products";
 import { siteDescription, siteName, siteUrl } from "../../data/site";
 import { WHATSAPP_NUMBER } from "../../data/whatsapp";
-
-/**
- * Moneda de los precios del catálogo. Ajusta si vendes en otra
- * (ej. "COP" para pesos colombianos).
- */
-const CURRENCY = "USD";
 
 /**
  * Datos estructurados JSON-LD (schema.org) para resultados enriquecidos:
@@ -43,7 +38,7 @@ export default function StructuredData() {
         brand: { "@type": "Brand", name: siteName },
         offers: {
           "@type": "Offer",
-          price: product.price.toFixed(2),
+          price: String(product.price),
           priceCurrency: CURRENCY,
           availability: "https://schema.org/InStock",
           url: siteUrl,

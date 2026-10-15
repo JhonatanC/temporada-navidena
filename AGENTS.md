@@ -31,7 +31,6 @@ Cada dominio puede tener una subcarpeta `partials/` para piezas pequeñas y desa
    - `category`: string
    - `price`: number
    - `description`: string
-   - `specs`: objeto (ej: tamaño, materiales, etc.)
 3. **Simplicity First:** Al ser un proyecto de aprendizaje y portafolio, mantén el código legible, bien comentado y sin abstracciones innecesarias.
 
 ---

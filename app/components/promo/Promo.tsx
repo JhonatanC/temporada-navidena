@@ -1,13 +1,14 @@
 "use client";
 
-import PosterVideo from "../../assets/camino-de-mesa-rojo.jpeg";
+import Image from "next/image";
+import SalaDecorada from "../../assets/img-sala-decorada.jpeg";
 import GiftFinderButton from "../gift-finder/GiftFinderButton";
 import GiftIcon from "./partials/GiftIcon";
 
 /**
- * Sección promocional: fila de dos columnas al 50% (texto a la izquierda y
- * video a la derecha), centrada en un contenedor de ancho máximo.
- * Textos, botones y video son mock: se reemplazarán por el contenido real.
+ * Sección promocional: fila de dos columnas al 50% (texto a la izquierda e
+ * imagen a la derecha), centrada en un contenedor de ancho máximo.
+ * Textos y botones son mock: se reemplazarán por el contenido real.
  */
 const promo = {
   title: "Vive la magia de una Navidad hecha a tu medida",
@@ -15,20 +16,19 @@ const promo = {
     "Enciende cada rincón de tu hogar con detalles que cuentan historias: luces cálidas, texturas suaves y el aroma inconfundible de la temporada. Déjate inspirar por nuestro video y descubre cómo transformar tu casa en un escenario lleno de Navidad.",
   primaryLabel: "Ver catálogo",
   secondaryLabel: "Encuentra tu regalo",
-  // Video mock de ejemplo (fuente pública CC0 de MDN). Reemplazar por el video real.
-  videoSrc: "https://mdn.github.io/shared-assets/videos/flower.mp4",
-  poster: PosterVideo.src,
+  // Imagen de una sala decorada con motivos navideños.
+  image: SalaDecorada,
 };
 
 export default function Promo() {
   return (
     <section
       id="promo"
-      aria-label="Video promocional de Navidad"
+      aria-label="Imagen promocional de Navidad"
       className="mx-auto grid max-w-7xl scroll-mt-20 items-center gap-10 px-6 py-20 md:grid-cols-2 md:gap-16"
     >
       {/* Columna izquierda (50%): título, párrafo y botones */}
-      <div className="flex flex-col items-start gap-6">
+      <div className="flex flex-col items-start justify-center gap-6">
         <h2 className="text-3xl leading-[37px] text-verde-bosque md:text-4xl md:leading-[43px]">
           {promo.title}
         </h2>
@@ -67,20 +67,15 @@ export default function Promo() {
         </div>
       </div>
 
-      {/* Columna derecha (50%): video mock con imagen de preview */}
-      <div className="relative aspect-video w-full overflow-hidden rounded-3xl shadow-xl ring-1 ring-verde-bosque/10">
-        <video
-          className="h-full w-full object-cover"
-          poster={promo.poster}
-          controls
-          preload="none"
-          playsInline
-        >
-          <source src={promo.videoSrc} type="video/mp4" />
-          Tu navegador no soporta la etiqueta de video.
-        </video>
-
-
+      {/* Columna derecha (50%): imagen de una sala decorada */}
+      <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-gray-50 shadow-xl ring-1 ring-verde-bosque/10 md:aspect-[3/4]">
+        <Image
+          src={promo.image}
+          alt="Sala decorada con motivos navideños"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain object-center"
+        />
       </div>
     </section>
   );

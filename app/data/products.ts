@@ -46,8 +46,18 @@ export interface Product {
   category: string;
   style: ProductStyle;
   price: number;
+  /**
+   * Etiqueta de unidad que se muestra después del precio, p. ej. "c/u" (cada
+   * uno) cuando el valor es por pieza y no por el conjunto de la foto.
+   * Opcional: los productos que no la definan muestran solo "Desde $X".
+   */
+  unit?: string;
+  /**
+   * Si es `false`, el precio se muestra como valor estándar ("$X") en vez de
+   * "Desde $X". Por defecto (sin definir) se muestra con "Desde".
+   */
+  priceFrom?: boolean;
   description: string;
-  specs: Record<string, string>;
   image: StaticImageData;
 }
 

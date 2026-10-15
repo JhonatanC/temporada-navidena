@@ -87,7 +87,7 @@ export default function Home() {
         {/* Cajas de beneficios: se superponen al hero con margen top negativo */}
         <Benefits />
 
-        {/* Sección promocional: fila texto + video mock */}
+        {/* Sección promocional: fila texto + imagen */}
         <Promo />
 
         {/* Catálogo: "Detalles que enamoran" con tarjetas de producto y modal */}

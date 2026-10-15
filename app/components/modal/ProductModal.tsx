@@ -3,6 +3,8 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import type { Product } from "@/app/data/products";
+import { formatPriceLabel } from "@/app/data/currency";
+import PriceNote from "@/app/components/pricing/PriceNote";
 import CloseIcon from "./partials/CloseIcon";
 
 interface ProductModalProps {
@@ -86,22 +88,18 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           </h3>
 
           <p className="text-2xl leading-[31px] font-semibold text-vinotinto">
-            ${product.price.toFixed(2)}
+            {formatPriceLabel(product.price, {
+              from: product.priceFrom,
+              unit: product.unit,
+            })}
           </p>
+
+          {/* Aclaración de que el precio es de referencia y puede variar */}
+          <PriceNote className="-mt-2 text-xs leading-[19px] sm:text-sm sm:leading-[21px]" />
 
           <p className="text-base leading-[23px] text-verde-oliva">
             {product.description}
           </p>
-
-          {/* Especificaciones */}
-          <dl className="flex flex-col gap-2 border-t border-verde-bosque/10 pt-5">
-            {Object.entries(product.specs).map(([label, value]) => (
-              <div key={label} className="flex gap-2 text-sm leading-[21px]">
-                <dt className="font-semibold text-verde-bosque">{label}:</dt>
-                <dd className="text-verde-oliva">{value}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
       </div>
     </div>

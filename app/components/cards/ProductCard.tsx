@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Product } from "@/app/data/products";
+import { formatPriceLabel } from "@/app/data/currency";
 
 interface ProductCardProps {
   product: Product;
@@ -40,6 +41,12 @@ export default function ProductCard({ product, onDetail }: ProductCardProps) {
         </h3>
         <p className="line-clamp-2 text-sm leading-[21px] text-verde-oliva">
           {product.description}
+        </p>
+        <p className="text-lg leading-[25px] font-semibold text-vinotinto">
+          {formatPriceLabel(product.price, {
+            from: product.priceFrom,
+            unit: product.unit,
+          })}
         </p>
         <button
           type="button"
