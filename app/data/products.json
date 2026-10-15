@@ -121,7 +121,7 @@
     "id": "prod-16",
     "title": "Individual Dorado",
     "category": "Mesa",
-    "style": "Natural",
+    "style": "Brillante",
     "price": 20000,
     "unit": "c/u",
     "description": "Juego de individuales en tonos claros para una mesa elegante y luminosa.",
@@ -150,7 +150,7 @@
     "id": "prod-19",
     "title": "Cortinero Niño",
     "category": "Cortineros",
-    "style": "Natural",
+    "style": "Clásica",
     "price": 50000,
     "description": "Cortinero decorativo con acabado festivo, perfecto para dar el toque final a la ventana.",
     "image": "cortinero-h.jpeg"
@@ -159,7 +159,7 @@
     "id": "prod-20",
     "title": "Pareja Cortinero",
     "category": "Cortineros",
-    "style": "Brillante",
+    "style": "Clásica",
     "price": 90000,
     "description": "Cortinero decorativo de la colección navideña para cortinas de cualquier ambiente.",
     "image": "cortinero-p.jpeg"
@@ -177,7 +177,7 @@
     "id": "prod-22",
     "title": "Cojín Muñeco de Nieve",
     "category": "Cojines",
-    "style": "Clásica",
+    "style": "Brillante",
     "price": 75000,
     "description": "Cojín decorativo con motivo de muñeco de nieve, un clásico navideño para el sofá o la cama.",
     "image": "cojin-muneco-nieve.jpeg"
@@ -186,7 +186,7 @@
     "id": "prod-23",
     "title": "Cojín Reno Café",
     "category": "Cojines",
-    "style": "Natural",
+    "style": "Brillante",
     "price": 90000,
     "description": "Cojín con figura de reno en tono café, ideal para aportar calidez y un aire natural a la decoración.",
     "image": "cojin-reno-cafe.jpeg"
@@ -205,7 +205,7 @@
     "id": "prod-25",
     "title": "Cubre Sillas Claros",
     "category": "Cubre Sillas",
-    "style": "Natural",
+    "style": "Brillante",
     "price": 40000,
     "unit": "c/u",
     "description": "Fundas de silla en tonos claros para una mesa elegante y luminosa en las cenas navideñas.",
@@ -215,7 +215,7 @@
     "id": "prod-26",
     "title": "Reloj Navideño",
     "category": "Decoración",
-    "style": "Clásica",
+    "style": "Brillante",
     "price": 100000,
     "description": "Reloj decorativo de temática navideña, un detalle funcional para vestir cualquier ambiente.",
     "image": "reloj.jpeg"

@@ -10,6 +10,7 @@ import {
   buildWhatsAppHref,
 } from "@/app/data/whatsapp";
 import WhatsAppIcon from "@/app/components/whatsapp/partials/WhatsAppIcon";
+import useBodyScrollLock from "@/app/hooks/useBodyScrollLock";
 import CloseIcon from "./partials/CloseIcon";
 
 interface ProductModalProps {
@@ -21,10 +22,14 @@ interface ProductModalProps {
 /**
  * Modal de detalle de producto.
  * Se cierra con el botón X, al tocar el fondo o con la tecla Escape.
- * Mientras está abierto bloquea el scroll del body.
+ * Mientras está abierto bloquea el scroll del body (vía `useBodyScrollLock`,
+ * que soporta modales anidados sin congelar la página).
  */
 export default function ProductModal({ product, onClose }: ProductModalProps) {
-  // Cierra con Escape y bloquea el scroll del fondo mientras el modal está abierto.
+  // Bloquea el scroll del fondo mientras el modal está abierto.
+  useBodyScrollLock(product !== null);
+
+  // Cierra con Escape mientras el modal está abierto.
   useEffect(() => {
     if (!product) return;
 
@@ -33,13 +38,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
     };
 
     document.addEventListener("keydown", handleKeyDown);
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = previousOverflow;
-    };
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, [product, onClose]);
 
   if (!product) return null;
@@ -81,13 +80,13 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
         {/* Información del producto */}
         <div className="flex flex-col justify-center gap-5 p-8 md:p-10">
-          {/* Categoría (relleno verde oliva) y taxonomía (outline) */}
+          {/* Categoría y taxonomía, con etiquetas para que el usuario entienda qué es cada dato */}
           <div className="flex flex-wrap items-center gap-2">
             <span className="w-fit rounded-full px-4 py-1 text-sm leading-[21px] font-semibold text-vinotinto ring-1 ring-vinotinto">
-              {product.category}
+              Categoría: {product.category}
             </span>
             <span className="w-fit rounded-full px-4 py-1 text-sm leading-[21px] font-semibold text-verde-oliva ring-1 ring-verde-oliva">
-              {product.style}
+              Tipo de Navidad: {product.style}
             </span>
           </div>
 

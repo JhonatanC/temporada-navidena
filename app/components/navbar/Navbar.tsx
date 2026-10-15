@@ -103,7 +103,7 @@ export default function Navbar() {
               isSolid ? "text-verde-bosque" : "text-white"
             }`}
           >
-            Navidad
+            Temporada Navideña
           </Link>
 
           {/* Enlaces en línea: visible desde tablet */}

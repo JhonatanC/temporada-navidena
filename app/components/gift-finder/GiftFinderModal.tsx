@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { products, productStyles, type Product, type ProductStyle } from "@/app/data/products";
 import ProductModal from "@/app/components/modal/ProductModal";
+import useBodyScrollLock from "@/app/hooks/useBodyScrollLock";
 import CloseIcon from "@/app/components/modal/partials/CloseIcon";
 import GiftFinderCard from "./partials/GiftFinderCard";
 import StarIcon from "./partials/StarIcon";
@@ -34,9 +35,14 @@ export default function GiftFinderModal({ open, onClose }: GiftFinderModalProps)
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-  // Cierra con Escape (salvo que el detalle de producto esté encima,
-  // que tiene su propio listener) y bloquea el scroll del body mientras
-  // el pop-up está abierto.
+  // Bloquea el scroll del body mientras el pop-up está abierto. El hook usa un
+  // contador compartido entre modales, así que superponer el detalle de
+  // producto (que también bloquea) ya no puede dejar la página congelada al
+  // cerrar (bug: el guardado manual capturaba el "hidden" del otro modal).
+  useBodyScrollLock(open);
+
+  // Cierra con Escape, salvo que el detalle de producto esté encima,
+  // que tiene su propio listener (se cierra primero ese).
   useEffect(() => {
     if (!open) return;
 
@@ -50,13 +56,7 @@ export default function GiftFinderModal({ open, onClose }: GiftFinderModalProps)
     };
 
     document.addEventListener("keydown", handleKeyDown);
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = previousOverflow;
-    };
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, [open, selectedProduct, onClose]);
 
   // Cierra el pop-up y lo deja listo para el próximo uso (vuelve a "Clásica").
