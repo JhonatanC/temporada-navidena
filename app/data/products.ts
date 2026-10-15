@@ -23,9 +23,7 @@ import individualesClaros from "../assets/invididuales-claros.jpeg";
 import munecoNoelRojo from "../assets/muneco-noel-rojo.jpeg";
 import munecoRenoMacho from "../assets/muneco-reno-macho.jpeg";
 import munecoRenoMujer from "../assets/muneco-reno-mujer.jpeg";
-import munecosSala from "../assets/munecos-sala.jpeg";
 import pieDeArbolRojo1 from "../assets/pie-de-arbol-rojo-1.jpeg";
-import pieDeArbolRojo from "../assets/pie-de-arbol-rojo.jpeg";
 import pieDeArbolRosado from "../assets/pie-de-arbol-rosado.jpeg";
 import reloj from "../assets/reloj.jpeg";
 import renoParejas from "../assets/reno-parejas.jpeg";
@@ -88,9 +86,7 @@ const productImages: Record<string, StaticImageData> = {
   "muneco-noel-rojo.jpeg": munecoNoelRojo,
   "muneco-reno-macho.jpeg": munecoRenoMacho,
   "muneco-reno-mujer.jpeg": munecoRenoMujer,
-  "munecos-sala.jpeg": munecosSala,
   "pie-de-arbol-rojo-1.jpeg": pieDeArbolRojo1,
-  "pie-de-arbol-rojo.jpeg": pieDeArbolRojo,
   "pie-de-arbol-rosado.jpeg": pieDeArbolRosado,
   "reloj.jpeg": reloj,
   "reno-parejas.jpeg": renoParejas,

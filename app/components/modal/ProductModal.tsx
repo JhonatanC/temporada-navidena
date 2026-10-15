@@ -76,9 +76,15 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
         {/* Información del producto */}
         <div className="flex flex-col justify-center gap-5 p-8 md:p-10">
-          <span className="w-fit rounded-full bg-rosa-coral/15 px-4 py-1 text-sm leading-[21px] font-semibold text-vinotinto">
-            {product.category}
-          </span>
+          {/* Categoría (relleno verde oliva) y taxonomía (outline) */}
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="w-fit rounded-full bg-verde-oliva px-4 py-1 text-sm leading-[21px] font-semibold text-white">
+              {product.category}
+            </span>
+            <span className="w-fit rounded-full px-4 py-1 text-sm leading-[21px] font-semibold text-verde-oliva ring-1 ring-verde-oliva">
+              {product.style}
+            </span>
+          </div>
 
           <h3
             id="product-modal-title"

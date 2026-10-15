@@ -5,7 +5,6 @@
     "category": "Cojines",
     "style": "Natural",
     "price": 90000,
-    "priceFrom": false,
     "description": "Cojín de felpa suave en tono blanco con detalles navideños bordados, ideal para dar calidez al sofá o a la cama.",
     "image": "cojin-blanco-navidad.jpeg"
   },
@@ -15,7 +14,6 @@
     "category": "Cojines",
     "style": "Brillante",
     "price": 75000,
-    "priceFrom": false,
     "description": "Cojín decorativo con motivo de muñeco de nieve en tonos rosados, un detalle dulce para la sala.",
     "image": "cojin-muneco-hielo-rosado.jpeg"
   },
@@ -25,7 +23,6 @@
     "category": "Cojines",
     "style": "Clásica",
     "price": 60000,
-    "priceFrom": false,
     "description": "Cojín en rojo intenso con la palabra Noel, perfecto para sumar espíritu festivo a tu decoración.",
     "image": "cojin-noel-rojo.jpeg"
   },
@@ -35,7 +32,6 @@
     "category": "Cojines",
     "style": "Brillante",
     "price": 60000,
-    "priceFrom": false,
     "description": "La versión en rosa coral del clásico cojín Noel, ideal para decoraciones suaves y modernas.",
     "image": "cojin-noel-rosado.jpeg"
   },
@@ -45,7 +41,6 @@
     "category": "Cojines",
     "style": "Clásica",
     "price": 75000,
-    "priceFrom": false,
     "description": "Cojín clásico en tono vinotinto para aportar contraste y calidez a cualquier rincón del hogar.",
     "image": "cojin-rojo.jpeg"
   },
@@ -77,15 +72,6 @@
     "image": "muneco-reno-mujer.jpeg"
   },
   {
-    "id": "prod-09",
-    "title": "Set de Muñecos de Sala",
-    "category": "Muñecos",
-    "style": "Natural",
-    "price": 320000,
-    "description": "Conjunto de muñecos navideños para decorar la sala y crear una escena llena de temporada.",
-    "image": "munecos-sala.jpeg"
-  },
-  {
     "id": "prod-10",
     "title": "Pareja de Renos Decorativos",
     "category": "Muñecos",
@@ -93,15 +79,6 @@
     "price": 240000,
     "description": "Pareja de renos coordinados que aportan un toque tierno y elegante a la decoración.",
     "image": "reno-parejas.jpeg"
-  },
-  {
-    "id": "prod-11",
-    "title": "Pie de Árbol Rojo",
-    "category": "Pies de Árbol",
-    "style": "Clásica",
-    "price": 140000,
-    "description": "Falda para la base del árbol en tono rojo que oculta el soporte y aporta un acabado limpio.",
-    "image": "pie-de-arbol-rojo.jpeg"
   },
   {
     "id": "prod-12",
@@ -126,7 +103,7 @@
     "title": "Camino de Mesa Rojo",
     "category": "Mesa",
     "style": "Clásica",
-    "price": 100000,
+    "price": 90000,
     "description": "Camino de mesa en rojo profundo para vestir la mesa de las cenas navideñas.",
     "image": "camino-de-mesa-rojo.jpeg"
   },
@@ -135,17 +112,17 @@
     "title": "Individual Rosado",
     "category": "Mesa",
     "style": "Brillante",
-    "price": 35000,
+    "price": 15000,
     "unit": "c/u",
     "description": "Individual en tono rosado que protege y realza cada puesto de la mesa.",
     "image": "individual-rosado.jpeg"
   },
   {
     "id": "prod-16",
-    "title": "Set de Individuales Claros",
+    "title": "Individual Dorado",
     "category": "Mesa",
     "style": "Natural",
-    "price": 120000,
+    "price": 20000,
     "unit": "c/u",
     "description": "Juego de individuales en tonos claros para una mesa elegante y luminosa.",
     "image": "invididuales-claros.jpeg"
@@ -162,28 +139,28 @@
   },
   {
     "id": "prod-18",
-    "title": "Cortinero Modelo G",
+    "title": "Cortinero Niña",
     "category": "Cortineros",
     "style": "Clásica",
-    "price": 20000,
+    "price": 50000,
     "description": "Cortinero decorativo para sujetar las cortinas con un estilo navideño.",
     "image": "cortinero-g.jpeg"
   },
   {
     "id": "prod-19",
-    "title": "Cortinero Modelo H",
+    "title": "Cortinero Niño",
     "category": "Cortineros",
     "style": "Natural",
-    "price": 20000,
+    "price": 50000,
     "description": "Cortinero decorativo con acabado festivo, perfecto para dar el toque final a la ventana.",
     "image": "cortinero-h.jpeg"
   },
   {
     "id": "prod-20",
-    "title": "Cortinero Modelo P",
+    "title": "Pareja Cortinero",
     "category": "Cortineros",
     "style": "Brillante",
-    "price": 20000,
+    "price": 90000,
     "description": "Cortinero decorativo de la colección navideña para cortinas de cualquier ambiente.",
     "image": "cortinero-p.jpeg"
   },
@@ -202,7 +179,6 @@
     "category": "Cojines",
     "style": "Clásica",
     "price": 75000,
-    "priceFrom": false,
     "description": "Cojín decorativo con motivo de muñeco de nieve, un clásico navideño para el sofá o la cama.",
     "image": "cojin-muneco-nieve.jpeg"
   },
@@ -212,7 +188,6 @@
     "category": "Cojines",
     "style": "Natural",
     "price": 90000,
-    "priceFrom": false,
     "description": "Cojín con figura de reno en tono café, ideal para aportar calidez y un aire natural a la decoración.",
     "image": "cojin-reno-cafe.jpeg"
   },
