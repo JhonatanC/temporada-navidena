@@ -5,7 +5,10 @@
     "category": "Cojines",
     "style": "Natural",
     "price": 90000,
-    "description": "Cojín de felpa suave en tono blanco con detalles navideños bordados, ideal para dar calidez al sofá o a la cama.",
+    "descriptions": {
+      "short": "Cojín blanco con la palabra «Christmas» y un tierno sombrero verde con pomponcito blanco; calidez festiva para tu sofá o tu cama.",
+      "long": "Cojín de felpa suave en blanco con la palabra «Christmas» en letras tipo Navidad y un simpático sombrero verde rematado con un pomponcito blanco. Un diseño esponjoso y lleno de espíritu festivo que abraza el sofá, la cama o ese rincón que quieres vestir de Navidad."
+    },
     "image": "cojin-blanco-navidad.jpeg"
   },
   {
@@ -14,7 +17,10 @@
     "category": "Cojines",
     "style": "Brillante",
     "price": 75000,
-    "description": "Cojín decorativo con motivo de muñeco de nieve en tonos rosados, un detalle dulce para la sala.",
+    "descriptions": {
+      "short": "Cojín con muñeco de nieve en tonos rosados; un toque de magia y dulzura para acompañar la sala.",
+      "long": "Cojín con un tierno muñeco de nieve que luce sombrero rosado rematado con una cinta dorada y cachetes sonrojados. Un diseño en tonos rosados que aporta magia y dulzura a la sala: el detalle perfecto para abrazar el sofá o la cama y darle un toque encantador a tu hogar esta Navidad."
+    },
     "image": "cojin-muneco-hielo-rosado.jpeg"
   },
   {
@@ -23,7 +29,10 @@
     "category": "Cojines",
     "style": "Clásica",
     "price": 60000,
-    "description": "Cojín en rojo intenso con la palabra Noel, perfecto para sumar espíritu festivo a tu decoración.",
+    "descriptions": {
+      "short": "Cojín con un muñeco de Papá Noel, gorro rojo con cinta de colores navideños y una abundante barba blanca y suave.",
+      "long": "Cojín con un simpático muñeco de Papá Noel que luce un gorro rojo con cinta de colores navideños verdes, rojos y dorados, y una abundante barba blanca y suave alrededor de sus cachetes. El detalle perfecto para sumarle espíritu festivo y ternura a tu sofá, tu cama o ese rincón que quieres llenar de Navidad."
+    },
     "image": "cojin-noel-rojo.jpeg"
   },
   {
@@ -32,7 +41,10 @@
     "category": "Cojines",
     "style": "Brillante",
     "price": 60000,
-    "description": "La versión en rosa coral del clásico cojín Noel, ideal para decoraciones suaves y modernas.",
+    "descriptions": {
+      "short": "Cojín con un muñeco de Papá Noel, gorro rosado con cinta dorada y una abundante barba blanca y suave.",
+      "long": "Cojín con un tierno muñeco de Papá Noel que luce un gorro rosado con cinta dorada y una abundante barba blanca y suave alrededor de sus cachetes. En su versión rosa, la magia de la Navidad se vuelve dulce y moderna: ideal para abrazar el sofá o la cama con ternura."
+    },
     "image": "cojin-noel-rosado.jpeg"
   },
   {
@@ -41,7 +53,10 @@
     "category": "Cojines",
     "style": "Clásica",
     "price": 75000,
-    "description": "Cojín clásico en tono vinotinto para aportar contraste y calidez a cualquier rincón del hogar.",
+    "descriptions": {
+      "short": "Cojín rojo con la risa de Santa Claus «Ho Ho Ho» bordada en letras blancas; la sonrisa de la Navidad para tu hogar.",
+      "long": "Cojín rojo con la famosa risa de Santa Claus «Ho Ho Ho» bordada en letras blancas, esa que anuncia la llegada de la Navidad. Un clásico lleno de alegría y calidez que viste el sofá, la cama o cualquier rincón del hogar con espíritu festivo."
+    },
     "image": "cojin-rojo.jpeg"
   },
   {
@@ -50,7 +65,10 @@
     "category": "Muñecos",
     "style": "Clásica",
     "price": 500000,
-    "description": "Pareja de muñecos navideños de mesa con gorro y detalles en rojo, ideales para decorar juntos.",
+    "descriptions": {
+      "short": "Papá y Mamá Noel celebran la Navidad en familia: una escena cálida y alegre de gorros con bordado tipo nieve que llena de magia tu hogar.",
+      "long": "Papá y Mamá Noel se reúnen en una escena cálida y alegre que celebra la Navidad en familia. Ambos lucen gorros con los colores clásicos de la temporada —verde, blanco y rojo— realzados por un bordado tipo nieve; Papá Noel presume su barba abundante y lisa y Mamá Noel su cabello crespo, con unas gafas que completan el look de los dos. Un cinturón dorado resalta sobre su vestimenta roja y, juntos, llenan de magia y amor cada rincón de tu hogar."
+    },
     "image": "muneco-noel-rojo.jpeg"
   },
   {
@@ -59,7 +77,10 @@
     "category": "Muñecos",
     "style": "Natural",
     "price": 130000,
-    "description": "Muñeco decorativo de reno pensado para acompañar la decoración de la sala.",
+    "descriptions": {
+      "short": "Un muñeco reno alegre, de nariz roja y cachetes sonrojados, con su overol de bolsillo y botones: la ternura que acompaña tu sala en Navidad.",
+      "long": "Un muñeco reno alegre que llega para animar la Navidad: su rostro se enciende con cachetes sonrojados, unas pequeñas pecas y una nariz roja que resalta entre sus rasgos. Asoman sobre su cabeza unos pequeños cuernos color café, y su overol luce detalles coquetos —su bolsillo y sus botones— que le dan todo el toque de personalidad. Un compañero tierno y luminoso que acompaña la decoración de tu sala."
+    },
     "image": "muneco-reno-macho.jpeg"
   },
   {
@@ -68,7 +89,10 @@
     "category": "Muñecos",
     "style": "Natural",
     "price": 130000,
-    "description": "Muñeca de reno con detalles suaves, ideal para formar una pareja decorativa de temporada.",
+    "descriptions": {
+      "short": "Muñeca reno de nariz roja y cachetes sonrojados, con moño y cuernos decorados con estrellas tipo nieve; junto al reno macho, una decoración llena de amor.",
+      "long": "La muñeca reno saluda con un gesto alegre: cachetes sonrojados, unas pequeñas pecas y una nariz roja que resalta en su rostro. Sus pequeños cuernos color café van decorados con estrellas tipo nieve y un moño remata su cabeza. Su vestido luce detalles coquetos —como sus bolsillos— con bordes color plateados que realzan el conjunto. En pareja con el reno macho, forma una decoración llena de amor y espíritu navideño."
+    },
     "image": "muneco-reno-mujer.jpeg"
   },
   {
@@ -77,7 +101,10 @@
     "category": "Muñecos",
     "style": "Natural",
     "price": 240000,
-    "description": "Pareja de renos coordinados que aportan un toque tierno y elegante a la decoración.",
+    "descriptions": {
+      "short": "Pareja de renos alegres con cachetes sonrojados, pecas, nariz roja, cuernos color café y overol de bolsillo y botones; el toque dulce de una navidad mágica.",
+      "long": "Una pareja de renos animosa que celebra la Navidad con caras alegres: cachetes sonrojados, unas pequeñas pecas y una nariz roja que resalta entre sus rasgos. Sus pequeños cuernos color café asoman sobre sus cabezas y su overol luce detalles coquetos —como su bolsillo y sus botones— que le dan personalidad. Juntos, forman la compañía perfecta para llenar de magia y calidez cada rincón del hogar."
+    },
     "image": "reno-parejas.jpeg"
   },
   {
@@ -86,7 +113,10 @@
     "category": "Pies de Árbol",
     "style": "Clásica",
     "price": 140000,
-    "description": "Modelo clásico de pie de árbol en rojo con caída amplia y bordes definidos.",
+    "descriptions": {
+      "short": "Pie de árbol rojo con bordado en dorado y una escena navideña clásica: dos renos alegres con collarcitos dorados y Papá Noel al centro. Magia garantizada.",
+      "long": "Si eres amante de la Navidad clásica, este pie de árbol rojo es para ti. En colores rojo, blanco y verde, tres protagonistas le dan vida: dos renos muy alegres con collarcitos dorados y un Papá Noel en el centro, con su abundante barba y sombrero dorado. El bordado en dorado remata la pieza con el brillo que lo termina todo, para convertir el rincón de tu árbol en una Navidad mágica."
+    },
     "image": "pie-de-arbol-rojo-1.jpeg"
   },
   {
@@ -95,7 +125,10 @@
     "category": "Pies de Árbol",
     "style": "Brillante",
     "price": 140000,
-    "description": "Falda para árbol en tono rosa coral, ideal para decoraciones modernas y luminosas.",
+    "descriptions": {
+      "short": "Pie de árbol rosado con fondo pastel, muñecos de jengibre en rosa y dorado y una casa de dulce al centro: la Navidad en su versión más dulce.",
+      "long": "Este pie de árbol rosado lleva la Navidad al lado más dulce de los colores. Sobre un fondo pastel se apilan piezas blancas con detalles escarchados —estrellitas de nieve y medias lunas— junto a muñecos de jengibre con sus paletas en rosa y dorado. En el centro brilla una casa de dulce con nieve sobre su techo y listones rojo y blanco con toques verdes, mientras unos árboles de Navidad acompañan la escena sobre el mismo fondo. Un rincón mágico para el que quieras que se reúnan."
+    },
     "image": "pie-de-arbol-rosado.jpeg"
   },
   {
@@ -104,7 +137,10 @@
     "category": "Mesa",
     "style": "Clásica",
     "price": 90000,
-    "description": "Camino de mesa en rojo profundo para vestir la mesa de las cenas navideñas.",
+    "descriptions": {
+      "short": "Camino de mesa rojo con bordes dorados y dos muñecos de nieve con gorro dorado, bufanda marrón y sonrisa grande: la mesa más mágica de las cenas en familia.",
+      "long": "Este camino de mesa rojo se luce con sus bordes dorados y dos muñecos de nieve superpuestos que le dan vida a la pieza. Cada muñeco luce un gorro dorado con franja roja, un pequeño detalle tipo árbol de Navidad en verde, una gran sonrisa y mejillas sonrojadas; una bufanda color marrón con estrellas tipo nieve los mantiene abrigados. Con él, tus cenas navideñas en familia se vuelven cálidas y mágicas."
+    },
     "image": "camino-de-mesa-rojo.jpeg"
   },
   {
@@ -114,7 +150,10 @@
     "style": "Brillante",
     "price": 15000,
     "unit": "c/u",
-    "description": "Individual en tono rosado que protege y realza cada puesto de la mesa.",
+    "descriptions": {
+      "short": "Individual rosado con bordes dorados y motivos de jengibre, renos enamorados y muñeco de nieve; los detalles que hacen mágica tu mesa.",
+      "long": "Este individual rosado se luce con sus bordes dorados y motivos que dan gracia: dos de ellos llevan muñecos de jengibre con moño, una gran sonrisa y cachetes sonrojados; otros dos muestran unos renos muy enamorados con un gesto de amor por la Navidad; y el restante, un muñeco de nieve muy feliz con su gorrito dorado y blanco y una bufanda. Elige tu favorito y llena tu mesa de ternura para compartir."
+    },
     "image": "individual-rosado.jpeg"
   },
   {
@@ -124,7 +163,10 @@
     "style": "Brillante",
     "price": 20000,
     "unit": "c/u",
-    "description": "Juego de individuales en tonos claros para una mesa elegante y luminosa.",
+    "descriptions": {
+      "short": "Individual en amarillo pastel con bordes dorados y muñecos de nieve de sombrerito café, franja de nieve y cuello con estrellas doradas.",
+      "long": "Este individual en amarillo pastel se decora con bordes dorados y muñecos de nieve superpuestos que le dan vida: cada uno luce un sombrerito color café con una franja tipo relleno de nieve blanca, cachetes sonrojados y una gran sonrisa; su pequeño cuello se realza con estrellas tipo nieve en dorado. Un detalle cálido y luminoso para vestir cada puesto de tu mesa en Navidad."
+    },
     "image": "invididuales-claros.jpeg"
   },
   {
@@ -134,7 +176,10 @@
     "style": "Clásica",
     "price": 40000,
     "unit": "c/u",
-    "description": "Funda de silla en rojo que transforma por completo el comedor en segundos.",
+    "descriptions": {
+      "short": "Cubre sillas con borde blanco tipo nieve y cuatro diseños: dos Papá Noel de gorro escarchado y barba larga, y dos muñecos de nieve con gorrito de cuadros.",
+      "long": "Un hermoso cubre sillas que transforma el comedor con su borde blanco tipo nieve y reúne cuatro diseños en total. Dos son Papá Noel, con un gorro blanco de estrellitas escarchadas en verde y rojo, un bordeado navideño rematado con un moñito al final y una barba larga; los otros dos son muñecos de nieve con un gorrito rayado tipo cuadros en rojo, verde y amarillo, cachetes sonrojados, una gran sonrisa y un moñito dorado. Juntos envuelven la mesa con el espíritu de la Navidad."
+    },
     "image": "cobre-sillas-rojo.jpeg"
   },
   {
@@ -143,7 +188,7 @@
     "category": "Cortineros",
     "style": "Clásica",
     "price": 50000,
-    "description": "Cortinero decorativo para sujetar las cortinas con un estilo navideño.",
+    "description": "Cortinero con figura de niña; un detalle tierno que sujeta las cortinas y despierta la magia en la ventana.",
     "image": "cortinero-g.jpeg"
   },
   {
@@ -152,7 +197,7 @@
     "category": "Cortineros",
     "style": "Clásica",
     "price": 50000,
-    "description": "Cortinero decorativo con acabado festivo, perfecto para dar el toque final a la ventana.",
+    "description": "Cortinero con figura de niño, el toque festivo que da el acabado final de magia a la ventana.",
     "image": "cortinero-h.jpeg"
   },
   {
@@ -161,7 +206,7 @@
     "category": "Cortineros",
     "style": "Clásica",
     "price": 90000,
-    "description": "Cortinero decorativo de la colección navideña para cortinas de cualquier ambiente.",
+    "description": "Pareja de cortineros de la colección navideña para acompañar con amor y estilo cualquier ventana del hogar.",
     "image": "cortinero-p.jpeg"
   },
   {
@@ -170,7 +215,7 @@
     "category": "Mesa",
     "style": "Brillante",
     "price": 100000,
-    "description": "Camino de mesa en rosa coral que ilumina la mesa y combina con decoraciones modernas de temporada.",
+    "description": "Camino de mesa en rosa coral que ilumina la mesa y reúne a todos alrededor de la magia navideña.",
     "image": "camino-de-mesa-rosado.jpeg"
   },
   {
@@ -179,7 +224,7 @@
     "category": "Cojines",
     "style": "Brillante",
     "price": 75000,
-    "description": "Cojín decorativo con motivo de muñeco de nieve, un clásico navideño para el sofá o la cama.",
+    "description": "Cojín con muñeco de nieve, un clásico que abraza el sofá o la cama con la ternura de la Navidad.",
     "image": "cojin-muneco-nieve.jpeg"
   },
   {
@@ -188,7 +233,7 @@
     "category": "Cojines",
     "style": "Brillante",
     "price": 90000,
-    "description": "Cojín con figura de reno en tono café, ideal para aportar calidez y un aire natural a la decoración.",
+    "description": "Cojín con figura de reno en tono café que suma calidez y un toque especial a tu rincón favorito.",
     "image": "cojin-reno-cafe.jpeg"
   },
   {
@@ -198,7 +243,7 @@
     "style": "Clásica",
     "price": 40000,
     "unit": "c/u",
-    "description": "Segundo modelo de funda para sillas que renueva el comedor con un acabado navideño.",
+    "description": "Otro modelo de funda de silla que renueva el comedor y lo llena de espíritu navideño.",
     "image": "cubre-sillas-2.jpeg"
   },
   {
@@ -208,7 +253,7 @@
     "style": "Brillante",
     "price": 40000,
     "unit": "c/u",
-    "description": "Fundas de silla en tonos claros para una mesa elegante y luminosa en las cenas navideñas.",
+    "description": "Fundas de silla en tonos claros para una mesa elegante y luminosa, lista para recibir a quienes más quieres.",
     "image": "cubre-sillas-claros.jpeg"
   },
   {
@@ -217,7 +262,7 @@
     "category": "Decoración",
     "style": "Brillante",
     "price": 100000,
-    "description": "Reloj decorativo de temática navideña, un detalle funcional para vestir cualquier ambiente.",
+    "description": "Reloj decorativo navideño: un detalle funcional que lleva la magia de la Navidad a cualquier ambiente.",
     "image": "reloj.jpeg"
   }
 ]

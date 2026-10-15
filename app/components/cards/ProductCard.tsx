@@ -40,7 +40,7 @@ export default function ProductCard({ product, onDetail }: ProductCardProps) {
           {product.title}
         </h3>
         <p className="line-clamp-2 text-sm leading-[21px] text-verde-oliva">
-          {product.description}
+          {product.descriptions.short}
         </p>
         <p className="text-lg leading-[25px] font-semibold text-vinotinto">
           {formatPriceLabel(product.price, {

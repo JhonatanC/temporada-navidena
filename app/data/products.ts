@@ -37,6 +37,14 @@ export type ProductStyle = "Clásica" | "Natural" | "Brillante";
  */
 export const productStyles: ProductStyle[] = ["Clásica", "Natural", "Brillante"];
 
+/** Descripciones del producto: corta para las tarjetas, larga para el pop-up. */
+export interface ProductDescriptions {
+  /** Texto corto: se muestra en las tarjetas del catálogo. */
+  short: string;
+  /** Texto largo: se muestra en el pop-up de detalle del producto. */
+  long: string;
+}
+
 /** Producto del catálogo, ya con la imagen resuelta y lista para usar. */
 export interface Product {
   id: string;
@@ -55,13 +63,22 @@ export interface Product {
    * "Desde $X". Por defecto (sin definir) se muestra con "Desde".
    */
   priceFrom?: boolean;
-  description: string;
+  /** Textos del producto: corto (tarjetas del catálogo) y largo (pop-up). */
+  descriptions: ProductDescriptions;
   image: StaticImageData;
 }
 
-/** Producto tal como viene en el JSON: la imagen es solo el nombre del archivo. */
-interface RawProduct extends Omit<Product, "image"> {
+/**
+ * Producto tal como viene en el JSON: la imagen es solo el nombre del archivo.
+ * Los productos aún no migrados traen una única `description`, que se usa como
+ * respaldo para ambos textos.
+ */
+interface RawProduct extends Omit<Product, "image" | "descriptions"> {
   image: string;
+  /** Formato antiguo: una sola descripción. Se mantiene como respaldo. */
+  description?: string;
+  /** Formato nuevo: descripción corta (tarjeta) y larga (pop-up). */
+  descriptions?: ProductDescriptions;
 }
 
 // Mapa nombre de archivo -> imagen importada.
@@ -97,7 +114,13 @@ const productImages: Record<string, StaticImageData> = {
 // propiedades opcionales, que no encaja directo con RawProduct.
 export const products: Product[] = (
   productsData as unknown as RawProduct[]
-).map((product) => ({
+).map(({ image, description, descriptions, ...product }) => ({
   ...product,
-  image: productImages[product.image],
+  // Migración en curso: si el producto aún no tiene `descriptions`, su
+  // `description` única se usa como texto corto y largo a la vez.
+  descriptions: descriptions ?? {
+    short: description ?? "",
+    long: description ?? "",
+  },
+  image: productImages[image],
 }));

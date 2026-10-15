@@ -30,7 +30,7 @@ Cada dominio puede tener una subcarpeta `partials/` para piezas pequeñas y desa
    - `title`: string
    - `category`: string
    - `price`: number
-   - `description`: string
+   - `descriptions`: objeto con la descripción `short` (tarjetas del catálogo) y `long` (pop-up de detalle). Migración en curso: los productos que aún no la tengan usan el `description` legado (string) como corto y largo a la vez.
 3. **Simplicity First:** Al ser un proyecto de aprendizaje y portafolio, mantén el código legible, bien comentado y sin abstracciones innecesarias.
 
 ---

@@ -31,7 +31,7 @@ export default function StructuredData() {
       item: {
         "@type": "Product",
         name: product.title,
-        description: product.description,
+        description: product.descriptions.short,
         sku: product.id,
         category: product.category,
         image: new URL(product.image.src, siteUrl).href,

@@ -108,7 +108,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           <PriceNote className="-mt-2 text-xs leading-[19px] sm:text-sm sm:leading-[21px]" />
 
           <p className="text-base leading-[23px] text-verde-oliva">
-            {product.description}
+            {product.descriptions.long}
           </p>
 
           {/* Botón verde oliva: lleva a WhatsApp con los datos del producto */}
