@@ -1,3 +1,6 @@
+import BgGif from "../../assets/bg-gif.jpg";
+import BgSend from "../../assets/bg-send.jpg";
+import BgCheck from "../../assets/bg-check.jpg";
 import GiftIcon from "./partials/GiftIcon";
 import ShippingIcon from "./partials/ShippingIcon";
 import StarIcon from "./partials/StarIcon";
@@ -6,6 +9,8 @@ import StarIcon from "./partials/StarIcon";
  * Cajas de beneficios que se superponen al hero.
  * Cada beneficio tiene un título y un texto corto de apoyo (máx. 3 líneas).
  * Datos e íconos mock: se reemplazarán por el contenido real más adelante.
+ * Las imágenes de la cara trasera se importan como módulos (igual que en
+ * `app/data/products.ts`), ya que los assets viven dentro de `app/assets/`.
  */
 const benefits = [
   {
@@ -13,18 +18,21 @@ const benefits = [
     title: "Regalos únicos",
     description: "Piezas especiales para sorprender a quien más quieres.",
     Icon: GiftIcon,
+    bgImage: BgGif.src,
   },
   {
     id: "envios",
     title: "Envíos a todo el país",
     description: "Recibe tu pedido en casa, rápido y sin complicaciones.",
     Icon: ShippingIcon,
+    bgImage: BgSend.src,
   },
   {
     id: "calidad",
     title: "Calidad garantizada",
     description: "Materiales y acabados que duran toda la temporada.",
     Icon: StarIcon,
+    bgImage: BgCheck.src,
   },
 ];
 
@@ -40,19 +48,47 @@ export default function Benefits() {
       aria-label="Beneficios"
       className="relative z-10 mx-auto mt-10 grid max-w-7xl gap-6 px-6 md:-mt-[110.5px] md:grid-cols-3"
     >
-      {benefits.map(({ id, title, description, Icon }) => (
+      {benefits.map(({ id, title, description, Icon, bgImage }) => (
         <article
           key={id}
-          className="benefit-item flex w-full flex-col items-center gap-4 rounded-2xl bg-white p-8 text-center shadow-lg"
+          className="benefits-item group h-full min-h-[221px] w-full cursor-pointer [perspective:1200px]"
         >
-          {/* Contenedor del ícono: círculo claro que contrasta con la imagen del hero */}
-          <span className="flex h-14 w-14 items-center justify-center rounded-full bg-rosa-coral/15 text-vinotinto">
-            <Icon />
-          </span>
-          <h3 className="text-xl leading-[27px] text-verde-bosque">{title}</h3>
-          <p className="line-clamp-3 w-full max-w-[16rem] text-sm leading-[21px] text-verde-oliva italic">
-            {description}
-          </p>
+          <div className="relative h-full w-full transition-transform duration-700 ease-in-out [transform-style:preserve-3d] group-hover:[transform:rotateX(180deg)] motion-reduce:transition-none motion-reduce:group-hover:[transform:none]">
+            {/* Cara frontal */}
+            <div className="absolute inset-0 flex h-full flex-col items-center gap-4 rounded-2xl border border-fondo bg-white p-8 text-center shadow-lg [backface-visibility:hidden]">
+              {/* Contenedor del ícono: círculo claro que contrasta con la imagen del hero */}
+              <span className="flex h-14 w-14 items-center justify-center rounded-full bg-rosa-coral/15 text-vinotinto">
+                <Icon />
+              </span>
+              <h3 className="text-xl leading-[27px] text-verde-bosque">
+                {title}
+              </h3>
+              <p className="line-clamp-3 w-full max-w-[16rem] text-sm leading-[21px] italic text-verde-oliva">
+                {description}
+              </p>
+            </div>
+
+            {/* Cara trasera */}
+            <div
+              className="absolute inset-0 flex h-full flex-col items-center gap-4 rounded-2xl p-8 text-center text-white [backface-visibility:hidden] [transform:rotateX(180deg)] bg-cover bg-center"
+              style={{ backgroundImage: `url(${bgImage})` }}
+            >
+              {/* Overlay semi-transparente de marca para que el texto y el ícono resalten */}
+              <div
+                className="absolute inset-0 rounded-2xl bg-verde-bosque/60"
+                aria-hidden="true"
+              />
+              <div className="relative z-10 flex h-full flex-col items-center justify-center gap-4">
+                <span className="flex h-14 w-14 items-center justify-center rounded-full bg-white/20 text-white">
+                  <Icon />
+                </span>
+                <h3 className="text-xl leading-[27px] text-white">{title}</h3>
+                <p className="line-clamp-3 w-full max-w-[16rem] text-sm leading-[21px] italic text-white/90">
+                  {description}
+                </p>
+              </div>
+            </div>
+          </div>
         </article>
       ))}
     </section>

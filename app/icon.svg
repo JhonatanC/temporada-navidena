@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Decoraciones Navideñas">
+  <!-- Fondo circular verde bosque -->
+  <circle cx="16" cy="16" r="16" fill="#182602" />
+  <!-- Estrella amarilla en la punta -->
+  <path
+    d="M16 3.3 L16.735 5.489 L19.043 5.512 L17.189 6.886 L17.881 9.089 L16 7.75 L14.119 9.089 L14.811 6.886 L12.957 5.512 L15.265 5.489 Z"
+    fill="#f7c948"
+  />
+  <!-- Árbol: tres niveles, silueta clara sobre el fondo -->
+  <path d="M16 10.5 L11 18 L21 18 Z" fill="#f2f2f2" />
+  <path d="M16 15.5 L9 23 L23 23 Z" fill="#f2f2f2" />
+  <path d="M16 20.5 L7 28 L25 28 Z" fill="#f2f2f2" />
+  <!-- Tronco vinotinto -->
+  <rect x="14.4" y="27.6" width="3.2" height="3" rx="0.4" fill="#73020c" />
+  <!-- Adornos rosa coral -->
+  <circle cx="13.2" cy="20.5" r="0.9" fill="#d95560" />
+  <circle cx="19" cy="25.5" r="1" fill="#d95560" />
+</svg>

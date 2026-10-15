@@ -9,14 +9,15 @@ import StarIcon from "./partials/StarIcon";
  * subtítulo amarillo y párrafo) y a la derecha una estrella con un botón
  * amarillo que lleva directo a WhatsApp.
  * Fondo verde profundo (#0d3b2d) en todo el bloque.
- * Los textos son mock: se reemplazarán por el contenido real.
+ * El mensaje invita a separar los productos con tiempo (plan de separación
+ * desde el 20% o el 50%) y a escribir por WhatsApp para reservarlos.
  */
 const cta = {
-  title: "Un recuerdo, una sonrisa",
-  subtitle: "Un recuerdo para siempre",
+  title: "Decora tu Navidad sin complicarte",
+  subtitle: "Plan de separación desde el 20% o el 50%",
   description:
-    "Hay una Navidad para cada persona. Encuentra ese pequeño detalle que va con la tuya.",
-  buttonLabel: "Escríbenos por WhatsApp",
+    "Con el plan de separación apartas tus productos favoritos con solo una parte y pagas el resto después. Resérvalos con tiempo y asegúralos para diciembre.",
+  buttonLabel: "Reserva por WhatsApp",
 };
 
 export default function Cta() {

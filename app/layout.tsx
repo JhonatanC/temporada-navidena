@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Cinzel_Decorative, Inter } from "next/font/google";
+import StructuredData from "./components/seo/StructuredData";
 import WhatsAppButton from "./components/whatsapp/WhatsAppButton";
+import { siteDescription, siteName, siteUrl } from "./data/site";
 import "./globals.css";
 
 // Inter: textos generales, párrafos, precios y especificaciones.
@@ -16,22 +18,16 @@ const cinzelDecorative = Cinzel_Decorative({
   weight: ["400", "700", "900"],
 });
 
-// Descripción reutilizada en la metadata general y en las tarjetas sociales.
-const siteDescription =
-  "Tienda de decoración navideña: coronas, esferas, guirnaldas, cojines, centros de mesa y detalles únicos para llenar de magia cada rincón de tu hogar en Navidad.";
-
 export const metadata: Metadata = {
   // URL base para resolver rutas absolutas (canonical, Open Graph, etc.).
   // En producción define NEXT_PUBLIC_SITE_URL con tu dominio real.
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  ),
+  metadataBase: new URL(siteUrl),
 
   // Título de la pestaña del navegador. `default` es la home y `template` se
   // aplica a las rutas hijas (ej. "Catálogo | Decoraciones Navideñas").
   title: {
-    default: "Decoraciones Navideñas",
-    template: "%s | Decoraciones Navideñas",
+    default: siteName,
+    template: `%s | ${siteName}`,
   },
   description: siteDescription,
 
@@ -56,10 +52,10 @@ export const metadata: Metadata = {
     "decoración navideña online",
   ],
 
-  applicationName: "Decoraciones Navideñas",
-  authors: [{ name: "Decoraciones Navideñas" }],
-  creator: "Decoraciones Navideñas",
-  publisher: "Decoraciones Navideñas",
+  applicationName: siteName,
+  authors: [{ name: siteName }],
+  creator: siteName,
+  publisher: siteName,
 
   // Canónica de la home para evitar contenido duplicado en buscadores.
   alternates: { canonical: "/" },
@@ -81,13 +77,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_CO",
     url: "/",
-    siteName: "Decoraciones Navideñas",
-    title: "Decoraciones Navideñas | Detalles que enamoran",
+    siteName: siteName,
+    title: `${siteName} | Detalles que enamoran`,
     description: siteDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Decoraciones Navideñas | Detalles que enamoran",
+    title: `${siteName} | Detalles que enamoran`,
     description: siteDescription,
   },
 };
@@ -104,6 +100,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {children}
         {/* Botón flotante de WhatsApp: visible en todo el sitio */}
         <WhatsAppButton />
+        {/* Datos estructurados JSON-LD (tienda + catálogo) para buscadores */}
+        <StructuredData />
       </body>
     </html>
   );
