@@ -7,9 +7,21 @@ export const WHATSAPP_NUMBER = "573153412432";
 /** Mensaje que se precarga en el chat (el usuario puede editarlo antes de enviar). */
 export const WHATSAPP_MESSAGE = "¡Hola! Me interesa su decoración navideña.";
 
-/** Construye el enlace a wa.me con el mensaje precargado. */
-export function buildWhatsAppHref(): string {
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    WHATSAPP_MESSAGE,
-  )}`;
+/**
+ * Construye el enlace a wa.me con el mensaje precargado.
+ * Si no se pasa `message`, usa el mensaje genérico del negocio.
+ */
+export function buildWhatsAppHref(message: string = WHATSAPP_MESSAGE): string {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
+
+/** Mensaje para pedir un producto específico desde el detalle del catálogo. */
+export function buildProductWhatsAppMessage({
+  title,
+  category,
+}: {
+  title: string;
+  category: string;
+}): string {
+  return `¡Hola! Me interesa este producto: ${title} (${category})`;
 }

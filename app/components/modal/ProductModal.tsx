@@ -5,6 +5,11 @@ import Image from "next/image";
 import type { Product } from "@/app/data/products";
 import { formatPriceLabel } from "@/app/data/currency";
 import PriceNote from "@/app/components/pricing/PriceNote";
+import {
+  buildProductWhatsAppMessage,
+  buildWhatsAppHref,
+} from "@/app/data/whatsapp";
+import WhatsAppIcon from "@/app/components/whatsapp/partials/WhatsAppIcon";
 import CloseIcon from "./partials/CloseIcon";
 
 interface ProductModalProps {
@@ -78,7 +83,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
         <div className="flex flex-col justify-center gap-5 p-8 md:p-10">
           {/* Categoría (relleno verde oliva) y taxonomía (outline) */}
           <div className="flex flex-wrap items-center gap-2">
-            <span className="w-fit rounded-full bg-verde-oliva px-4 py-1 text-sm leading-[21px] font-semibold text-white">
+            <span className="w-fit rounded-full px-4 py-1 text-sm leading-[21px] font-semibold text-vinotinto ring-1 ring-vinotinto">
               {product.category}
             </span>
             <span className="w-fit rounded-full px-4 py-1 text-sm leading-[21px] font-semibold text-verde-oliva ring-1 ring-verde-oliva">
@@ -106,6 +111,17 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           <p className="text-base leading-[23px] text-verde-oliva">
             {product.description}
           </p>
+
+          {/* Botón verde oliva: lleva a WhatsApp con los datos del producto */}
+          <a
+            href={buildWhatsAppHref(buildProductWhatsAppMessage(product))}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-fit cursor-pointer items-center justify-center gap-2 self-center rounded-full bg-verde-oliva px-6 py-3 text-base leading-[23px] font-semibold text-white transition-colors hover:bg-verde-bosque"
+          >
+            <WhatsAppIcon className="h-5 w-5" />
+            Pedir por WhatsApp
+          </a>
         </div>
       </div>
     </div>
