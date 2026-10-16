@@ -60,9 +60,9 @@ export default function Benefits() {
               <span className="flex h-14 w-14 items-center justify-center rounded-full bg-rosa-coral/15 text-vinotinto">
                 <Icon />
               </span>
-              <h3 className="text-xl leading-[27px] text-verde-bosque">
+              <h2 className="text-xl leading-[27px] text-verde-bosque">
                 {title}
-              </h3>
+              </h2>
               <p className="line-clamp-3 w-full max-w-[16rem] text-sm leading-[21px] italic text-verde-oliva">
                 {description}
               </p>
@@ -82,7 +82,7 @@ export default function Benefits() {
                 <span className="flex h-14 w-14 items-center justify-center rounded-full bg-white/20 text-white">
                   <Icon />
                 </span>
-                <h3 className="text-xl leading-[27px] text-white">{title}</h3>
+                <h2 className="text-xl leading-[27px] text-white">{title}</h2>
                 <p className="line-clamp-3 w-full max-w-[16rem] text-sm leading-[21px] italic text-white/90">
                   {description}
                 </p>

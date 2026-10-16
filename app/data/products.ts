@@ -26,8 +26,14 @@ import individualesClaros from "../assets/invididuales-claros.jpeg";
 import monoAmarilloDecorativo from "../assets/mono-amarillo-decorativo.jpeg";
 import monoRojoDecorativo from "../assets/mono-rojo-decorativo.jpeg";
 import munecoNoelRojo from "../assets/muneco-noel-rojo.jpeg";
+import munecoDeNieve from "../assets/muneco-de-nieve.jpeg";
+import munecoDeNieveConRenoBebe from "../assets/muneco-de-nieve-con-reno-bebe.jpeg";
 import munecoRenoMacho from "../assets/muneco-reno-macho.jpeg";
 import munecoRenoMujer from "../assets/muneco-reno-mujer.jpeg";
+import munecoRenoNordico from "../assets/muneco-reno-nordico.jpeg";
+import munecosDeNieve from "../assets/munecos-de-nieve.jpeg";
+import munecosRenos from "../assets/munecos-renos.jpeg";
+import munecoNieveSentado from "../assets/muneco-nieve-sentado.jpeg";
 import papaNoelDecoracion from "../assets/papa-noel-decoracion.jpeg";
 import pieDeArbolRojo1 from "../assets/pie-de-arbol-rojo-1.jpeg";
 import pieDeArbolRosado from "../assets/pie-de-arbol-rosado.jpeg";
@@ -114,6 +120,12 @@ const productImages: Record<string, StaticImageData> = {
   "muneco-noel-rojo.jpeg": munecoNoelRojo,
   "muneco-reno-macho.jpeg": munecoRenoMacho,
   "muneco-reno-mujer.jpeg": munecoRenoMujer,
+  "muneco-de-nieve.jpeg": munecoDeNieve,
+  "muneco-de-nieve-con-reno-bebe.jpeg": munecoDeNieveConRenoBebe,
+  "muneco-reno-nordico.jpeg": munecoRenoNordico,
+  "munecos-de-nieve.jpeg": munecosDeNieve,
+  "munecos-renos.jpeg": munecosRenos,
+  "muneco-nieve-sentado.jpeg": munecoNieveSentado,
   "papa-noel-decoracion.jpeg": papaNoelDecoracion,
   "pie-de-arbol-rojo-1.jpeg": pieDeArbolRojo1,
   "pie-de-arbol-rosado.jpeg": pieDeArbolRosado,

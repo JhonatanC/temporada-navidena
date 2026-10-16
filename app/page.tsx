@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import BgHero from "./assets/bg-main.jpg";
 import Navbar from "./components/navbar/Navbar";
 import Benefits from "./components/benefits/Benefits";
@@ -33,9 +34,20 @@ export default function Home() {
             `scroll-mt-20` compensa la altura del navbar fijo al navegar por anclas. */}
         <section
           id="inicio"
-          className="relative flex h-auto w-full scroll-mt-20 items-center justify-center bg-cover bg-top md:h-[600px]"
-          style={{ backgroundImage: `url(${BgHero.src})` }}
+          className="relative flex h-auto w-full scroll-mt-20 items-center justify-center md:h-[600px]"
         >
+          {/* Imagen de fondo del hero: es la imagen más grande de la primera
+              pantalla (LCP), por eso se precarga con `preload` en vez de usar
+              la carga perezosa que next/image aplica por defecto. */}
+          <Image
+            src={BgHero}
+            alt=""
+            fill
+            preload
+            sizes="100vw"
+            className="object-cover object-top"
+          />
+
           {/* Capa oscura para dar contraste al texto sobre la imagen */}
           <div
             className="absolute inset-0 bg-verde-bosque/60"

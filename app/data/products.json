@@ -28,7 +28,7 @@
     "title": "Cojín Noel Rojo",
     "category": "Cojines",
     "style": "Clásica",
-    "price": 60000,
+    "price": 75000,
     "descriptions": {
       "short": "Cojín con un muñeco de Papá Noel, gorro rojo con cinta de colores navideños y una abundante barba blanca y suave.",
       "long": "Cojín con un simpático muñeco de Papá Noel que luce un gorro rojo con cinta de colores navideños verdes, rojos y dorados, y una abundante barba blanca y suave alrededor de sus cachetes. El detalle perfecto para sumarle espíritu festivo y ternura a tu sofá, tu cama o ese rincón que quieres llenar de Navidad."
@@ -40,7 +40,7 @@
     "title": "Cojín Noel Rosado",
     "category": "Cojines",
     "style": "Brillante",
-    "price": 60000,
+    "price": 75000,
     "descriptions": {
       "short": "Cojín con un muñeco de Papá Noel, gorro rosado con cinta dorada y una abundante barba blanca y suave.",
       "long": "Cojín con un tierno muñeco de Papá Noel que luce un gorro rosado con cinta dorada y una abundante barba blanca y suave alrededor de sus cachetes. En su versión rosa, la magia de la Navidad se vuelve dulce y moderna: ideal para abrazar el sofá o la cama con ternura."
@@ -52,7 +52,7 @@
     "title": "Cojín Navideño Rojo",
     "category": "Cojines",
     "style": "Clásica",
-    "price": 75000,
+    "price": 70000,
     "descriptions": {
       "short": "Cojín rojo con la risa de Santa Claus «Ho Ho Ho» bordada en letras blancas; la sonrisa de la Navidad para tu hogar.",
       "long": "Cojín rojo con la famosa risa de Santa Claus «Ho Ho Ho» bordada en letras blancas, esa que anuncia la llegada de la Navidad. Un clásico lleno de alegría y calidez que viste el sofá, la cama o cualquier rincón del hogar con espíritu festivo."
@@ -76,7 +76,7 @@
     "title": "Muñeco Reno Macho",
     "category": "Muñecos",
     "style": "Natural",
-    "price": 130000,
+    "price": 150000,
     "descriptions": {
       "short": "Un muñeco reno alegre, de nariz roja y cachetes sonrojados, con su overol de bolsillo y botones: la ternura que acompaña tu sala en Navidad.",
       "long": "Un muñeco reno alegre que llega para animar la Navidad: su rostro se enciende con cachetes sonrojados, unas pequeñas pecas y una nariz roja que resalta entre sus rasgos. Asoman sobre su cabeza unos pequeños cuernos color café, y su overol luce detalles coquetos —su bolsillo y sus botones— que le dan todo el toque de personalidad. Un compañero tierno y luminoso que acompaña la decoración de tu sala."
@@ -88,7 +88,7 @@
     "title": "Muñeca Reno Mujer",
     "category": "Muñecos",
     "style": "Natural",
-    "price": 130000,
+    "price": 150000,
     "descriptions": {
       "short": "Muñeca reno de nariz roja y cachetes sonrojados, con moño y cuernos decorados con estrellas tipo nieve; junto al reno macho, una decoración llena de amor.",
       "long": "La muñeca reno saluda con un gesto alegre: cachetes sonrojados, unas pequeñas pecas y una nariz roja que resalta en su rostro. Sus pequeños cuernos color café van decorados con estrellas tipo nieve y un moño remata su cabeza. Su vestido luce detalles coquetos —como sus bolsillos— con bordes color plateados que realzan el conjunto. En pareja con el reno macho, forma una decoración llena de amor y espíritu navideño."
@@ -100,7 +100,7 @@
     "title": "Pareja de Renos Decorativos",
     "category": "Muñecos",
     "style": "Natural",
-    "price": 240000,
+    "price": 280000,
     "descriptions": {
       "short": "Pareja de renos alegres con cachetes sonrojados, pecas, nariz roja, cuernos color café y overol de bolsillo y botones; el toque dulce de una navidad mágica.",
       "long": "Una pareja de renos animosa que celebra la Navidad con caras alegres: cachetes sonrojados, unas pequeñas pecas y una nariz roja que resalta entre sus rasgos. Sus pequeños cuernos color café asoman sobre sus cabezas y su overol luce detalles coquetos —como su bolsillo y sus botones— que le dan personalidad. Juntos, forman la compañía perfecta para llenar de magia y calidez cada rincón del hogar."
@@ -235,7 +235,7 @@
     "title": "Cojín Muñeco de Nieve",
     "category": "Cojines",
     "style": "Brillante",
-    "price": 75000,
+    "price": 90000,
     "descriptions": {
       "short": "Cojín amarillo pastel con destellos dorados y un muñeco de nieve de brazos abiertos y cachetes sonrojados, listo para abrazar tu Navidad.",
       "long": "Este cojín amarillo pastel se luce con pequeños destellos dorados tipo nieve que escarchan su fondo y un muñeco de nieve con cachetes sonrojados y los brazos abiertos, listo para abrazar la Navidad. Su corbatín estilo moño, en dorado con líneas que le dan un toque texturizado, se remata con un botoncito en el centro del pecho, y un gorro navideño del mismo amarillo pastel —con punticos, estrellas tipo nieve y bordes dorados— completa el conjunto. Un cojín cálido y luminoso que trae el brillo de la temporada al sofá o a la cama."
@@ -320,8 +320,8 @@
     "id": "prod-29",
     "title": "Cortinero Reno",
     "category": "Cortineros",
-    "style": "Natural",
-    "price": 50000,
+    "style": "Clásica",
+    "price": 70000,
     "descriptions": {
       "short": "Cortinero con figura de reno de nariz roja y cachetes sonrojados; el detalle tierno que viste tu ventana en Navidad.",
       "long": "Este cortinero consta de un reno tierno que sujeta la cortina con una sonrisa alegre, cachetes sonrojados y una nariz roja que resalta en su rostro. Sus pequeños cuernos color café completan el diseño. El compañero perfecto para vestir tu ventana con ternura y espíritu navideño."
@@ -363,5 +363,77 @@
       "long": "Esta decoración de Papá Noel conquista con su rasgo más entrañable: una barba blanca tan abundante que cae en mechones sueltos, como una cascada de nieve bajo su rostro. Sobre su cabeza, un gorro navideño de colores brillantes le da el toque alegre y festivo que pide la temporada. Un clásico entrañable que llega para regalar calidez, ternura y magia a cualquier rincón de tu hogar esta Navidad."
     },
     "image": "papa-noel-decoracion.jpeg"
+  },
+  {
+    "id": "prod-33",
+    "title": "Renos",
+    "category": "Muñecos",
+    "style": "Natural",
+    "price": 200000,
+    "descriptions": {
+      "short": "Renos de peluche ultrasuaves: uno blanco invernal con cuernos plateados y bufanda metálica plateada, y otro café tradicional con cuernos de fieltro marrón y bufanda tejida con patrón navideño rojo, blanco y verde.",
+      "long": "Este adorable dúo de renos de peluche es el complemento perfecto para decorar tus espacios en esta época festiva. Con un acabado ultra suave al tacto, el conjunto incluye dos piezas coordinadas. El reno blanco invernal cuenta con cuernos plateados con bordes detallados y una elegante bufanda metálica plateada con suave brillo. El reno café tradicional luce cuernos de fieltro marrón con puntadas decorativas visibles y una bufanda tejida con un encantador patrón navideño en tonos rojos, blancos y verdes."
+    },
+    "image": "munecos-renos.jpeg"
+  },
+  {
+    "id": "prod-34",
+    "title": "Nieves",
+    "category": "Muñecos",
+    "style": "Clásica",
+    "price": 65000,
+    "descriptions": {
+      "short": "Muñecos de nieve con acabados artesanales. Muñeca: vestido y gorro verde-dorado con copitos, corazones y renos, bufanda dorada con flor de pascua roja, felpa blanca y zapatitos dorados escarchados. Muñeco: gorro rojo con pompón blanco, suéter festivo, lazo verde, botones dorados, pantalón rojo abullonado y botitas verdes escarchadas.",
+      "long": "Este encantador de muñeco de nieve con acabados artesanales es perfecto para darle la bienvenida a la Navidad en tu hogar. Cada figura cuenta con expresiones dulces y un vestuario detallado con tejidos de patrones navideños y bordes de felpa suave. La muñeca luce un hermoso vestido y gorro a juego con estampados de copitos de nieve, corazones y renos. Destaca su elegante bufanda dorada adornada con una flor de pascua (poinsettia) roja, sus bordes de felpa blanca afelpada y unos deslumbrantes zapatitos dorados con escarcha. El muñeco porta el clásico gorro navideño rojo con pompón blanco, un suéter tejido con patrones festivos, lazo verde en el cuello y detalles de botones dorados. Completa su atuendo con un pantalón rojo abullonado y botitas verdes escarchadas."
+    },
+    "image": "munecos-de-nieve.jpeg"
+  },
+  {
+    "id": "prod-35",
+    "title": "Reno Nórdico",
+    "category": "Muñecos",
+    "style": "Natural",
+    "price": 210000,
+    "descriptions": {
+      "short": "Reno de peluche con estilo nórdico, ultra suave y artesanal. Suéter geométrico con copos y renitos, bordes gris afelpados, pantalón verde oscuro, gorro a juego, grandes cuernos de madera rústica, bufanda gris con mini broche de Papá Noel, mejillas sonrosadas y nariz marrón.",
+      "long": "Este adorable reno de peluche con estilo nórdico es la compañía perfecta para decorar tus espacios en esta temporada festiva. Diseñado con una textura ultra suave y tiernos detalles artesanales. Viste un suéter tejido de inspiración nórdica con hermosos patrones geométricos, copos de nieve y una fila de pequeños renos en la parte inferior, complementado con bordes afelpados en tono gris y un pantalón verde oscuro. Lleva un gorro invernal a juego, grandes cuernos de madera rústica y una bufanda gris decorada con un encantador mini broche navideño de Papá Noel. Su dulce rostro destaca por mejillas sonrosadas, una gran nariz marrón y una expresión entrañable que encantará a grandes y chicos."
+    },
+    "image": "muneco-reno-nordico.jpeg"
+  },
+  {
+    "id": "prod-36",
+    "title": "Muñeco de Nieve Sentado",
+    "category": "Muñecos",
+    "style": "Natural",
+    "price": 140000,
+    "descriptions": {
+      "short": "Muñeco de nieve sentado, ideal para mesas, repisas o pie del árbol. Chaqueta blanca tipo corderito con ribetes estampados y botones en forma de dulces de menta, sombrero de copa rojo con aplique de Papá Noel, anteojos redondos dorados, nariz de zanahoria texturizada, piernas verdes de fieltro con adorno de estrella con gorrito de duende y letrero 'Feliz Navidad'.",
+      "long": "Este adorable muñeco de nieve sentado es el detalle perfecto para llenar de ternura cualquier rincón de tu hogar esta Navidad. Diseñado con una postura relajada ideal para ubicar sobre mesas, repisas o el pie del árbol, destaca por sus encantadores detalles artesanales. Viste una chaqueta blanca de textura suave tipo corderito con ribetes navideños estampados, acompañada de botones en forma de dulces de menta (peppermint). Lleva un elegante sombrero de copa alto en color rojo vibrante decorado con un tierno aplique de Papá Noel, elegantes anteojos redondos de montura dorada y una nariz de zanahoria texturizada. Sus grandes piernas verdes de fieltro cuentan con un delicado adorno en forma de estrella con gorrito de duende, y sostiene entre sus manos un letrero de madera con la frase escrita en cursiva 'Feliz Navidad'."
+    },
+    "image": "muneco-nieve-sentado.jpeg"
+  },
+  {
+    "id": "prod-37",
+    "title": "Muñeco de Nieve",
+    "category": "Muñecos",
+    "style": "Clásica",
+    "price": 180000,
+    "descriptions": {
+      "short": "Muñeco de nieve, textura extra suave, mejillas sonrosadas, ojos azules expresivos y nariz de zanahoria. Overol a cuadros rojo, verde y oscuro con copos de nieve, blusa con estampado de caramelos navideños, gorro a juego con aplique de acebo brillante, manos y zapatos rojos con borde de felpa blanca.",
+      "long": "Este adorable muñeco de nieve es el compañero ideal para decorar cualquier rincón especial de tu casa durante las fiestas. Diseñado con una textura extra suave y un tierno rostro de mejillas sonrosadas, ojos azules expresivos y una clásica nariz de zanahoria, destaca por sus encantadores detalles. Viste un overol de tela a cuadros en tonos rojos, verdes y oscuros con detalles de copos de nieve, combinado con una blusa de manga larga decorada con un divertido estampado de caramelos y dulces navideños (peppermint). Lleva un gorro navideño a juego con el overol, adornado con un delicado aplique festivo de acebo brillante con pompones y detalles metalizados. Sus manos y zapatos de color rojo intenso cuentan con bordes de suave felpa blanca, aportando un acabado cálido y tradicional."
+    },
+    "image": "muneco-de-nieve.jpeg"
+  },
+  {
+    "id": "prod-38",
+    "title": "Muñeco de Nieve con Reno Bebé",
+    "category": "Muñecos",
+    "style": "Clásica",
+    "price": 210000,
+    "descriptions": {
+      "short": "Muñeco de nieve de pie con tierno reno bebé en brazos. Overol a cuadros rojo y verde con copos de nieve, tirantes dorados, blusa con estampado de caramelos de menta, zapatos rojos con felpa blanca. Gorro con banda de felpa blanca y prendedor de reno, reno bebé con astas doradas, pezuñas marrones y bufanda navideña.",
+      "long": "Este adorable muñeco de nieve de pie es el protagonista ideal para decorar cualquier espacio especial durante esta Navidad. Con una expresión sumamente dulce, mejillas sonrosadas, ojos azules y una clásica nariz de zanahoria, destaca por sus encantadores detalles. Viste un overol de tela a cuadros en tonos rojos y verdes con delicados copos de nieve estampados, tirantes con detalles dorados, una blusa de manga larga decorada con un divertido patrón de caramelos de menta (peppermint) y zapatos rojos con bordes de felpa blanca. Lleva un gorro navideño a juego con el overol, adornado con una banda de suave felpa blanca y un tierno prendedor decorativo en forma de reno sobre un detalle brillante. El toque especial: sostiene en sus brazos a un tierno reno bebé de peluche, el cual cuenta con astas doradas relucientes, pezuñas marrones y una bufanda a juego con estampados navideños."
+    },
+    "image": "muneco-de-nieve-con-reno-bebe.jpeg"
   }
 ]

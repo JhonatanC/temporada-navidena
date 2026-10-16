@@ -15,13 +15,16 @@ interface GiftFinderCardProps {
 export default function GiftFinderCard({ product, onDetail }: GiftFinderCardProps) {
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-verde-bosque/10">
-      {/* Imagen en formato 4:3 para que quepan más widgets en el pop-up */}
+      {/* Imagen en formato 4:3 para que quepan más widgets en el pop-up.
+          Carga perezosa y con desenfoque: solo se ve al abrir el pop-up. */}
       <div className="relative aspect-[4/3] w-full overflow-hidden">
         <Image
           src={product.image}
           alt={product.title}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          loading="lazy"
+          placeholder="blur"
           className="object-cover"
         />
       </div>

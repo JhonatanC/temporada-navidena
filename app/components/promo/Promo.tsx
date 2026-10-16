@@ -74,6 +74,7 @@ export default function Promo() {
           alt="Sala decorada con motivos navideños"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
+          loading="lazy"
           className="object-contain object-center"
         />
       </div>

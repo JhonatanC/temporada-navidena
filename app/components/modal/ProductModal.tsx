@@ -67,13 +67,16 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
           <CloseIcon />
         </button>
 
-        {/* Imagen del producto */}
+        {/* Imagen del producto: al abrir el detalle queda a la vista de
+            inmediato, así que se carga en modo `eager` (sin esperar al lazy). */}
         <div className="relative aspect-[3/4] w-full md:h-full md:aspect-auto">
           <Image
             src={product.image}
             alt={product.title}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
+            loading="eager"
+            placeholder="blur"
             className="object-cover"
           />
         </div>

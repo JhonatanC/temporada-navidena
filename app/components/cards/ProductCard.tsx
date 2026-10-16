@@ -15,13 +15,17 @@ interface ProductCardProps {
 export default function ProductCard({ product, onDetail }: ProductCardProps) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-verde-bosque/5 transition-transform duration-300 hover:-translate-y-1">
-      {/* Imagen en formato cuadrado (1:1) con zoom sutil al pasar el cursor */}
+      {/* Imagen en formato cuadrado (1:1) con zoom sutil al pasar el cursor.
+          Está bajo el pliegue (hero + benefits + promo van antes), así que se
+          carga de forma perezosa y muestra un desenfoque mientras llega. */}
       <div className="relative aspect-square w-full overflow-hidden">
         <Image
           src={product.image}
           alt={product.title}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          loading="lazy"
+          placeholder="blur"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
       </div>
