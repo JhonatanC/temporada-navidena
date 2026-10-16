@@ -23,9 +23,12 @@ import cubreSillas2 from "../assets/cubre-sillas-2.jpeg";
 import cubreSillasClaros from "../assets/cubre-sillas-claros.jpeg";
 import individualRosado from "../assets/individual-rosado.jpeg";
 import individualesClaros from "../assets/invididuales-claros.jpeg";
+import monoAmarilloDecorativo from "../assets/mono-amarillo-decorativo.jpeg";
+import monoRojoDecorativo from "../assets/mono-rojo-decorativo.jpeg";
 import munecoNoelRojo from "../assets/muneco-noel-rojo.jpeg";
 import munecoRenoMacho from "../assets/muneco-reno-macho.jpeg";
 import munecoRenoMujer from "../assets/muneco-reno-mujer.jpeg";
+import papaNoelDecoracion from "../assets/papa-noel-decoracion.jpeg";
 import pieDeArbolRojo1 from "../assets/pie-de-arbol-rojo-1.jpeg";
 import pieDeArbolRosado from "../assets/pie-de-arbol-rosado.jpeg";
 import reloj from "../assets/reloj.jpeg";
@@ -106,9 +109,12 @@ const productImages: Record<string, StaticImageData> = {
   "cubre-sillas-claros.jpeg": cubreSillasClaros,
   "individual-rosado.jpeg": individualRosado,
   "invididuales-claros.jpeg": individualesClaros,
+  "mono-amarillo-decorativo.jpeg": monoAmarilloDecorativo,
+  "mono-rojo-decorativo.jpeg": monoRojoDecorativo,
   "muneco-noel-rojo.jpeg": munecoNoelRojo,
   "muneco-reno-macho.jpeg": munecoRenoMacho,
   "muneco-reno-mujer.jpeg": munecoRenoMujer,
+  "papa-noel-decoracion.jpeg": papaNoelDecoracion,
   "pie-de-arbol-rojo-1.jpeg": pieDeArbolRojo1,
   "pie-de-arbol-rosado.jpeg": pieDeArbolRosado,
   "reloj.jpeg": reloj,

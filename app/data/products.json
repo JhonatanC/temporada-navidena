@@ -296,7 +296,7 @@
     "id": "prod-27",
     "title": "Cojín Gnomos",
     "category": "Cojines",
-    "style": "Clásica",
+    "style": "Brillante",
     "price": 80000,
     "descriptions": {
       "short": "Cojín con tres gnomos de sombreros dorado y blanco con estrellas: la ternura nórdica que llena de magia tu sofá o tu cama.",
@@ -308,7 +308,7 @@
     "id": "prod-28",
     "title": "Cojín Muñecos de Nieve",
     "category": "Cojines",
-    "style": "Brillante",
+    "style": "Clásica",
     "price": 150000,
     "descriptions": {
       "short": "Cojín con muñecos de nieve de cachetes sonrojados y sonrisa tierna; la escarcha de la Navidad abrazando tu sofá o tu cama.",
@@ -327,5 +327,41 @@
       "long": "Este cortinero consta de un reno tierno que sujeta la cortina con una sonrisa alegre, cachetes sonrojados y una nariz roja que resalta en su rostro. Sus pequeños cuernos color café completan el diseño. El compañero perfecto para vestir tu ventana con ternura y espíritu navideño."
     },
     "image": "cortinero-reno.jpeg"
+  },
+  {
+    "id": "prod-30",
+    "title": "Moño Gigante",
+    "category": "Decoración",
+    "style": "Brillante",
+    "price": 150000,
+    "descriptions": {
+      "short": "Moño decorativo de gran tamaño, con sus cintas descolgando: el brillo que viste tu árbol de Navidad.",
+      "long": "Este moño decorativo está hecho para lucirse: su gran tamaño puede cubrir cerca del 60% de tu árbol de Navidad y convertirse en el centro de la decoración. Sus cintas descolgando caen con gracia entre las ramas y le dan movimiento a la pieza, para vestir el salón de brillo, calidez y espíritu festivo esta temporada."
+    },
+    "image": "mono-amarillo-decorativo.jpeg"
+  },
+  {
+    "id": "prod-31",
+    "title": "Moño Mediano",
+    "category": "Decoración",
+    "style": "Clásica",
+    "price": 80000,
+    "descriptions": {
+      "short": "Moño decorativo de tamaño compacto, con cintas descolgando: el clásico que da color a tu árbol de Navidad.",
+      "long": "Este moño decorativo llega en un tamaño más compacto —cubre alrededor del 20% de tu árbol— para sumar color sin opacar el resto de tus adornos. Luce entre las ramas, mientras sus cintas descolgando caen con gracia y le dan movimiento a la pieza. Un clásico atemporal para llenar de alegría y magia tu Navidad."
+    },
+    "image": "mono-rojo-decorativo.jpeg"
+  },
+  {
+    "id": "prod-32",
+    "title": "Decoración Papá Noel",
+    "category": "Decoración",
+    "style": "Natural",
+    "price": 150000,
+    "descriptions": {
+      "short": "Decoración de Papá Noel con una abundante barba blanca y un gorro navideño en colores vivos: la ternura clásica que llena de magia tu hogar.",
+      "long": "Esta decoración de Papá Noel conquista con su rasgo más entrañable: una barba blanca tan abundante que cae en mechones sueltos, como una cascada de nieve bajo su rostro. Sobre su cabeza, un gorro navideño de colores brillantes le da el toque alegre y festivo que pide la temporada. Un clásico entrañable que llega para regalar calidez, ternura y magia a cualquier rincón de tu hogar esta Navidad."
+    },
+    "image": "papa-noel-decoracion.jpeg"
   }
 ]
