@@ -7,6 +7,8 @@ import caminoDeMesaRojo from "../assets/camino-de-mesa-rojo.jpeg";
 import caminoDeMesaRosado from "../assets/camino-de-mesa-rosado.jpeg";
 import cobreSillasRojo from "../assets/cobre-sillas-rojo.jpeg";
 import cojinBlancoNavidad from "../assets/cojin-blanco-navidad.jpeg";
+import cojinGnomos from "../assets/cojin-gnomos.jpeg";
+import cojinMenecosDeNieve from "../assets/cojin-menecos-de-nieve.jpeg";
 import cojinMunecoHieloRosado from "../assets/cojin-muneco-hielo-rosado.jpeg";
 import cojinMunecoNieve from "../assets/cojin-muneco-nieve.jpeg";
 import cojinNoelRojo from "../assets/cojin-noel-rojo.jpeg";
@@ -16,6 +18,7 @@ import cojinRojo from "../assets/cojin-rojo.jpeg";
 import cortineroG from "../assets/cortinero-g.jpeg";
 import cortineroH from "../assets/cortinero-h.jpeg";
 import cortineroP from "../assets/cortinero-p.jpeg";
+import cortineroReno from "../assets/cortinero-reno.jpeg";
 import cubreSillas2 from "../assets/cubre-sillas-2.jpeg";
 import cubreSillasClaros from "../assets/cubre-sillas-claros.jpeg";
 import individualRosado from "../assets/individual-rosado.jpeg";
@@ -87,6 +90,8 @@ const productImages: Record<string, StaticImageData> = {
   "camino-de-mesa-rosado.jpeg": caminoDeMesaRosado,
   "cobre-sillas-rojo.jpeg": cobreSillasRojo,
   "cojin-blanco-navidad.jpeg": cojinBlancoNavidad,
+  "cojin-gnomos.jpeg": cojinGnomos,
+  "cojin-menecos-de-nieve.jpeg": cojinMenecosDeNieve,
   "cojin-muneco-hielo-rosado.jpeg": cojinMunecoHieloRosado,
   "cojin-muneco-nieve.jpeg": cojinMunecoNieve,
   "cojin-noel-rojo.jpeg": cojinNoelRojo,
@@ -96,6 +101,7 @@ const productImages: Record<string, StaticImageData> = {
   "cortinero-g.jpeg": cortineroG,
   "cortinero-h.jpeg": cortineroH,
   "cortinero-p.jpeg": cortineroP,
+  "cortinero-reno.jpeg": cortineroReno,
   "cubre-sillas-2.jpeg": cubreSillas2,
   "cubre-sillas-claros.jpeg": cubreSillasClaros,
   "individual-rosado.jpeg": individualRosado,

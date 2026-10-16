@@ -171,7 +171,7 @@
   },
   {
     "id": "prod-17",
-    "title": "Cubre Sillas Rojo",
+    "title": "Pareja Cubre Sillas Rojo",
     "category": "Cubre Sillas",
     "style": "Clásica",
     "price": 40000,
@@ -188,7 +188,10 @@
     "category": "Cortineros",
     "style": "Clásica",
     "price": 50000,
-    "description": "Cortinero con figura de niña; un detalle tierno que sujeta las cortinas y despierta la magia en la ventana.",
+    "descriptions": {
+      "short": "Cortinero con forma de muñeca de sonrisa tierna y vestido de cuadritos rojos y verdes con bordes dorados: hecha a mano para vestir tu ventana de Navidad.",
+      "long": "Este adorable sujetador de cortinas en forma de muñeca es perfecto para darle un toque festivo a tu decoración navideña. Hecha a mano con materiales suaves, esta tierna muñeca conquista con su gran sonrisa y sus cachetes sonrojados. Sus guantes y sus botas son rojos: los guantes van adornados con cintas navideñas en rojo, verde y blanco, y las botas rematan con un borde tipo nieve. Un sombrero bordado en blanco le cubre la cabeza, mientras su vestido muy navideño luce bordes dorados y un estampado de cuadritos rojos y verdes. Se sujeta a las cortinas con una banda elástica, así que es muy fácil de poner y quitar: una forma divertida y festiva de celebrar la Navidad."
+    },
     "image": "cortinero-g.jpeg"
   },
   {
@@ -197,7 +200,10 @@
     "category": "Cortineros",
     "style": "Clásica",
     "price": 50000,
-    "description": "Cortinero con figura de niño, el toque festivo que da el acabado final de magia a la ventana.",
+    "descriptions": {
+      "short": "Cortinero con forma de muñeco de nieve de sonrisa contagiosa y abrigo a cuadros rojo, blanco y verde: hecho a mano para vestir tu ventana.",
+      "long": "Este adorable sujetador de cortinas con forma de muñeco de nieve es perfecto para darle un toque festivo a tu decoración navideña. Hecho a mano con materiales suaves, este tierno personaje conquista con su sonrisa contagiosa, sus mejillas sonrojadas y su sombrero de copa de Papá Noel. Va vestido con un atuendo festivo: un abrigo a cuadros rojo, blanco y verde y una bufanda roja a juego con copos de nieve blancos. Se sujeta a las cortinas con una banda elástica, así que es muy fácil de poner y quitar: una forma divertida y festiva de celebrar la Navidad."
+    },
     "image": "cortinero-h.jpeg"
   },
   {
@@ -206,7 +212,10 @@
     "category": "Cortineros",
     "style": "Clásica",
     "price": 90000,
-    "description": "Pareja de cortineros de la colección navideña para acompañar con amor y estilo cualquier ventana del hogar.",
+    "descriptions": {
+      "short": "Pareja de muñecos de nieve que envuelven tus cortinas con amor, vestidos con trajes escoceses de cuadros rojos y verdes y destellos dorados.",
+      "long": "Esta adorable pareja de muñecos de nieve llega para envolver y sujetar tus cortinas con amor y estilo. Los dos van a juego, vestidos con trajes de patrón escocés en cuadros rojos y verdes entreverados con destellos dorados que le dan el brillo de la Navidad. Juntos forman la pareja perfecta para vestir tus ventanas con ternura, calidez y ese espíritu festivo que reúne a todos en casa. La forma más tierna de cerrar el año abrazando la magia de la temporada."
+    },
     "image": "cortinero-p.jpeg"
   },
   {
@@ -215,7 +224,10 @@
     "category": "Mesa",
     "style": "Brillante",
     "price": 100000,
-    "description": "Camino de mesa en rosa coral que ilumina la mesa y reúne a todos alrededor de la magia navideña.",
+    "descriptions": {
+      "short": "Camino de mesa rosado con escarcha blanca, bordados dorados y dos Papás Noel en cada esquina: el brillo que reúne a tu familia en Navidad.",
+      "long": "Este camino de mesa rosado se luce con detalles escarchados en blanco tipo nieve que le dan todo el aire de la Navidad, acompañados por bordados dorados. En cada esquina lo esperan dos Papás Noel de abundante barba, cada uno con su sombrero blanco con escarchas doradas, una cinta dorada que acompaña el gorro y un moño dorado que remata su punta. Un conjunto elegante y luminoso que reúne a todos alrededor de la mesa para celebrar la Navidad en familia."
+    },
     "image": "camino-de-mesa-rosado.jpeg"
   },
   {
@@ -224,7 +236,10 @@
     "category": "Cojines",
     "style": "Brillante",
     "price": 75000,
-    "description": "Cojín con muñeco de nieve, un clásico que abraza el sofá o la cama con la ternura de la Navidad.",
+    "descriptions": {
+      "short": "Cojín amarillo pastel con destellos dorados y un muñeco de nieve de brazos abiertos y cachetes sonrojados, listo para abrazar tu Navidad.",
+      "long": "Este cojín amarillo pastel se luce con pequeños destellos dorados tipo nieve que escarchan su fondo y un muñeco de nieve con cachetes sonrojados y los brazos abiertos, listo para abrazar la Navidad. Su corbatín estilo moño, en dorado con líneas que le dan un toque texturizado, se remata con un botoncito en el centro del pecho, y un gorro navideño del mismo amarillo pastel —con punticos, estrellas tipo nieve y bordes dorados— completa el conjunto. Un cojín cálido y luminoso que trae el brillo de la temporada al sofá o a la cama."
+    },
     "image": "cojin-muneco-nieve.jpeg"
   },
   {
@@ -233,17 +248,23 @@
     "category": "Cojines",
     "style": "Brillante",
     "price": 90000,
-    "description": "Cojín con figura de reno en tono café que suma calidez y un toque especial a tu rincón favorito.",
+    "descriptions": {
+      "short": "Cojín amarillo pastel con un reno de cuernos café, nariz roja, corbatín dorado y brazos abiertos para abrazar tu Navidad.",
+      "long": "Este cojín amarillo pastel da vida a un reno muy tierno: una gran sonrisa, cachetes sonrojados con unas pecas, una nariz roja que resalta en su rostro y unos cuernos color café. Llega con los brazos abiertos, abrazando —o esperando— el abrazo de la Navidad; unas felpas rematan los bordes de sus brazos. En su parte inferior, una tela blanca escarchada con estrellas tipo Navidad se superpone con delicadeza, mientras un corbatín dorado con un botoncito en el centro remata el conjunto. Un toque cálido y luminoso que suma calidez a tu rincón favorito esta temporada."
+    },
     "image": "cojin-reno-cafe.jpeg"
   },
   {
     "id": "prod-24",
-    "title": "Cubre Sillas Modelo 2",
+    "title": "Cubre Sillas - Variado",
     "category": "Cubre Sillas",
     "style": "Clásica",
     "price": 40000,
     "unit": "c/u",
-    "description": "Otro modelo de funda de silla que renueva el comedor y lo llena de espíritu navideño.",
+    "descriptions": {
+      "short": "Cubre sillas con borde blanco tipo nieve y cuatro diseños —gnomo, oso polar, muñeco de nieve y reno— que transforman tu comedor en Navidad.",
+      "long": "Un hermoso cubre sillas con borde blanco tipo nieve que transforma el comedor y reúne cuatro diseños en total. El primero es un gnomo de abundante barba, vestido con los colores clásicos de la Navidad —blanco, rojo y verde—; el segundo, un oso polar de mejillas sonrojadas con un moño dorado y un gorro navideño en esos mismos colores clásicos, coronado con estrellas doradas. Luego aparece un muñeco de nieve de mejillas sonrojadas, con su moño dorado y un botoncito verde en el centro, y un gorro blanco muy navideño con detalles dorados. El cierre lo pone un reno con su peculiar nariz roja, cuernos dorados, mejillas sonrojadas, pecas y un corbatín blanco con detalles dorados. Juntos, envuelven la mesa de espíritu navideño para recibir a quienes más quieres."
+    },
     "image": "cubre-sillas-2.jpeg"
   },
   {
@@ -253,7 +274,10 @@
     "style": "Brillante",
     "price": 40000,
     "unit": "c/u",
-    "description": "Fundas de silla en tonos claros para una mesa elegante y luminosa, lista para recibir a quienes más quieres.",
+    "descriptions": {
+      "short": "Cubre sillas amarillo pastel con cuatro muñecos de nieve de cachetes sonrojados, manitas doradas y gorros con borde tipo nieve: la Navidad más luminosa para tu mesa.",
+      "long": "Este cubre sillas amarillo pastel da vida a cuatro muñecos de nieve repartidos por sus fundas, cada uno con cachetes sonrojados y unas manitas color dorado que asoman con ternura. Sobre sus cabezas descansa un gorro blanco rematado con un borde de felpa blanca, como un copo de nieve navideña, con pequeños detalles dorados que le dan todo el brillo del conjunto. Un diseño cálido y luminoso que transforma el comedor y lo llena de magia para recibir a quienes más quieres."
+    },
     "image": "cubre-sillas-claros.jpeg"
   },
   {
@@ -262,7 +286,46 @@
     "category": "Decoración",
     "style": "Brillante",
     "price": 100000,
-    "description": "Reloj decorativo navideño: un detalle funcional que lleva la magia de la Navidad a cualquier ambiente.",
+    "descriptions": {
+      "short": "Reloj blanco con un muñeco de nieve recostado sobre él, de vestido rosado escarchado y accesorios dorados: la Navidad abrazando el tiempo.",
+      "long": "Este reloj blanco se luce con un muñeco de nieve recostado sobre su esfera, como abrazando el tiempo de la Navidad. Su vestido rosado va escarchado con estrellas tipo Navidad y rematado con pequeños bordes tipo nieve, mientras sus guantecitos y sus botas dorados —al igual que su gorro— le dan el brillo que lo termina todo. Un detalle funcional y mágico que lleva la calidez de la temporada a cualquier rincón de tu hogar."
+    },
     "image": "reloj.jpeg"
+  },
+  {
+    "id": "prod-27",
+    "title": "Cojín Gnomos",
+    "category": "Cojines",
+    "style": "Clásica",
+    "price": 80000,
+    "descriptions": {
+      "short": "Cojín con tres gnomos de sombreros dorado y blanco con estrellas: la ternura nórdica que llena de magia tu sofá o tu cama.",
+      "long": "Este cojín reúne a tres gnomos navideños con sus grandes sombreros: uno luce un sombrero totalmente dorado, otro uno blanco con una gran estrella tipo nieve en el centro, y el tercero uno blanco decorado con varias estrellas navideñas y punticos dorados. Con su ternura y ese toque de brillo, abraza el sofá o la cama y llena de magia y compañía cada rincón de tu hogar esta Navidad."
+    },
+    "image": "cojin-gnomos.jpeg"
+  },
+  {
+    "id": "prod-28",
+    "title": "Cojín Muñecos de Nieve",
+    "category": "Cojines",
+    "style": "Brillante",
+    "price": 150000,
+    "descriptions": {
+      "short": "Cojín con muñecos de nieve de cachetes sonrojados y sonrisa tierna; la escarcha de la Navidad abrazando tu sofá o tu cama.",
+      "long": "Este cojín reúne muñecos de nieve alegres, de cachetes sonrojados y una gran sonrisa, que traen el encanto del invierno a tu hogar. Su escena blanca y tierna invita a la calma y a la compañía, para vestir el sofá, la cama o ese rincón donde se reúne la familia cada Navidad."
+    },
+    "image": "cojin-menecos-de-nieve.jpeg"
+  },
+  {
+    "id": "prod-29",
+    "title": "Cortinero Reno",
+    "category": "Cortineros",
+    "style": "Natural",
+    "price": 50000,
+    "descriptions": {
+      "short": "Cortinero con figura de reno de nariz roja y cachetes sonrojados; el detalle tierno que viste tu ventana en Navidad.",
+      "long": "Este cortinero consta de un reno tierno que sujeta la cortina con una sonrisa alegre, cachetes sonrojados y una nariz roja que resalta en su rostro. Sus pequeños cuernos color café completan el diseño. El compañero perfecto para vestir tu ventana con ternura y espíritu navideño."
+    },
+    "image": "cortinero-reno.jpeg"
   }
 ]
