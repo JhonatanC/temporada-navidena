@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { products, type Product } from "@/app/data/products";
 import ProductCard from "@/app/components/cards/ProductCard";
 import ProductModal from "@/app/components/modal/ProductModal";
@@ -23,6 +23,28 @@ export default function Catalog() {
   const [activeCategory, setActiveCategory] = useState<string>(ALL);
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
+
+  // Ref a la sección del catálogo para hacer scroll al cambiar de página.
+  const catalogRef = useRef<HTMLElement>(null);
+  // Flag de intención de navegación: solo se activa al hacer clic explícito
+  // en los controles de paginación, filtro o buscador. Nunca al montar ni al
+  // refrescar la página.
+  const shouldScrollToCatalog = useRef(false);
+
+  // Al cambiar de página de paginación, vuelve al inicio de la sección del
+  // catálogo con scroll suave, pero únicamente si el cambio fue provocado por
+  // una interacción explícita del usuario. Al refrescar o montar la página
+  // desde otra sección (ej. el hero) no ocurre ningún scroll.
+  useEffect(() => {
+    if (!shouldScrollToCatalog.current) {
+      return;
+    }
+    shouldScrollToCatalog.current = false;
+    catalogRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }, [currentPage]);
 
   // "Todos" + las categorías únicas del catálogo, en orden de aparición.
   const categories = useMemo(
@@ -62,12 +84,14 @@ export default function Catalog() {
 
   // Al cambiar de categoría se vuelve siempre a la primera página.
   const handleCategoryChange = (category: string) => {
+    shouldScrollToCatalog.current = true;
     setActiveCategory(category);
     setCurrentPage(1);
   };
 
   // Al escribir en el buscador se reinicia la paginación a la primera página.
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    shouldScrollToCatalog.current = true;
     setSearchQuery(event.target.value);
     setCurrentPage(1);
   };
@@ -75,6 +99,7 @@ export default function Catalog() {
   return (
     <section
       id="catalog"
+      ref={catalogRef}
       aria-label="Detalles que enamoran"
       className="mx-auto w-full max-w-7xl scroll-mt-20 px-6 pt-8 pb-20"
     >
@@ -156,7 +181,10 @@ export default function Catalog() {
               <button
                 type="button"
                 disabled={currentPage === 1}
-                onClick={() => setCurrentPage((page) => page - 1)}
+                onClick={() => {
+                  shouldScrollToCatalog.current = true;
+                  setCurrentPage((page) => page - 1);
+                }}
                 className="cursor-pointer rounded-full bg-white px-4 py-2 text-sm leading-[21px] font-semibold text-verde-bosque ring-1 ring-verde-bosque/15 transition-colors hover:bg-rosa-coral/10 disabled:cursor-not-allowed disabled:opacity-40"
               >
                 Anterior
@@ -170,7 +198,10 @@ export default function Catalog() {
                       key={page}
                       type="button"
                       aria-current={isActive ? "page" : undefined}
-                      onClick={() => setCurrentPage(page)}
+                      onClick={() => {
+                        shouldScrollToCatalog.current = true;
+                        setCurrentPage(page);
+                      }}
                       className={`h-10 w-10 cursor-pointer rounded-full text-sm leading-[21px] font-semibold transition-colors ${
                         isActive
                           ? "bg-vinotinto text-white"
@@ -186,7 +217,10 @@ export default function Catalog() {
               <button
                 type="button"
                 disabled={currentPage === totalPages}
-                onClick={() => setCurrentPage((page) => page + 1)}
+                onClick={() => {
+                  shouldScrollToCatalog.current = true;
+                  setCurrentPage((page) => page + 1);
+                }}
                 className="cursor-pointer rounded-full bg-white px-4 py-2 text-sm leading-[21px] font-semibold text-verde-bosque ring-1 ring-verde-bosque/15 transition-colors hover:bg-rosa-coral/10 disabled:cursor-not-allowed disabled:opacity-40"
               >
                 Siguiente
