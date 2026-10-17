@@ -22,6 +22,7 @@ export default function Catalog() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [activeCategory, setActiveCategory] = useState<string>(ALL);
   const [currentPage, setCurrentPage] = useState(1);
+  const [searchQuery, setSearchQuery] = useState("");
 
   // "Todos" + las categorías únicas del catálogo, en orden de aparición.
   const categories = useMemo(
@@ -29,14 +30,23 @@ export default function Catalog() {
     [],
   );
 
-  // Solo se consideran las tarjetas de la categoría activa (o todas).
-  const filteredProducts = useMemo(
-    () =>
-      activeCategory === ALL
-        ? products
-        : products.filter((p) => p.category === activeCategory),
-    [activeCategory],
-  );
+  // Solo se consideran las tarjetas de la categoría activa (o todas), filtradas
+  // también por el texto del buscador (coincide en título o categoría).
+  const filteredProducts = useMemo(() => {
+    let result = products;
+    if (activeCategory !== ALL) {
+      result = result.filter((p) => p.category === activeCategory);
+    }
+    const query = searchQuery.trim().toLowerCase();
+    if (query) {
+      result = result.filter(
+        (p) =>
+          p.title.toLowerCase().includes(query) ||
+          p.category.toLowerCase().includes(query),
+      );
+    }
+    return result;
+  }, [activeCategory, searchQuery]);
 
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
 
@@ -56,6 +66,12 @@ export default function Catalog() {
     setCurrentPage(1);
   };
 
+  // Al escribir en el buscador se reinicia la paginación a la primera página.
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(event.target.value);
+    setCurrentPage(1);
+  };
+
   return (
     <section
       id="catalog"
@@ -71,6 +87,19 @@ export default function Catalog() {
           Cada pieza de nuestra colección está pensada para transformar tu hogar
           en una Navidad inolvidable.
         </p>
+
+        {/* Buscador de productos: 100% de ancho en móvil y el 50% centrado
+             a partir de tablets/desktop. */}
+        <div className="w-full md:w-1/2 max-w-md mx-auto mt-4">
+          <input
+            type="search"
+            aria-label="Buscar productos"
+            placeholder="Buscar productos (ej. Noel, Reno, Cojín)"
+            value={searchQuery}
+            onChange={handleSearchChange}
+            className="w-full rounded-full bg-white px-4 py-2.5 text-base leading-[23px] text-verde-bosque placeholder:text-verde-bosque/40 ring-1 ring-verde-bosque/15 focus:outline-none focus:ring-2 focus:ring-vinotinto transition-colors"
+          />
+        </div>
 
         {/* Botones tipo bullet para mostrar u ocultar categorías */}
         <div
@@ -99,62 +128,72 @@ export default function Catalog() {
         </div>
       </div>
 
-      {/* Grid de tarjetas: 1 columna en móvil y hasta 3 en pantallas grandes */}
-      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {paginatedProducts.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            onDetail={() => setSelectedProduct(product)}
-          />
-        ))}
-      </div>
+      {filteredProducts.length === 0 ? (
+        <p className="mt-12 text-center text-base leading-[23px] text-verde-bosque">
+          {searchQuery.trim()
+            ? `No se encontraron productos con "${searchQuery}".`
+            : "No hay productos en esta categoría."}
+        </p>
+      ) : (
+        <>
+          {/* Grid de tarjetas: 1 columna en móvil y hasta 3 en pantallas grandes */}
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {paginatedProducts.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                onDetail={() => setSelectedProduct(product)}
+              />
+            ))}
+          </div>
 
-      {/* Paginación: solo aparece cuando hay más de una página */}
-      {totalPages > 1 && (
-        <nav
-          aria-label="Paginación del catálogo"
-          className="mt-10 flex flex-wrap items-center justify-center gap-2"
-        >
-          <button
-            type="button"
-            disabled={currentPage === 1}
-            onClick={() => setCurrentPage((page) => page - 1)}
-            className="cursor-pointer rounded-full bg-white px-4 py-2 text-sm leading-[21px] font-semibold text-verde-bosque ring-1 ring-verde-bosque/15 transition-colors hover:bg-rosa-coral/10 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            Anterior
-          </button>
+          {/* Paginación: solo aparece cuando hay más de una página */}
+          {totalPages > 1 && (
+            <nav
+              aria-label="Paginación del catálogo"
+              className="mt-10 flex flex-wrap items-center justify-center gap-2"
+            >
+              <button
+                type="button"
+                disabled={currentPage === 1}
+                onClick={() => setCurrentPage((page) => page - 1)}
+                className="cursor-pointer rounded-full bg-white px-4 py-2 text-sm leading-[21px] font-semibold text-verde-bosque ring-1 ring-verde-bosque/15 transition-colors hover:bg-rosa-coral/10 disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                Anterior
+              </button>
 
-          {Array.from({ length: totalPages }, (_, index) => index + 1).map(
-            (page) => {
-              const isActive = page === currentPage;
-              return (
-                <button
-                  key={page}
-                  type="button"
-                  aria-current={isActive ? "page" : undefined}
-                  onClick={() => setCurrentPage(page)}
-                  className={`h-10 w-10 cursor-pointer rounded-full text-sm leading-[21px] font-semibold transition-colors ${
-                    isActive
-                      ? "bg-vinotinto text-white"
-                      : "bg-white text-verde-bosque ring-1 ring-verde-bosque/15 hover:bg-rosa-coral/10"
-                  }`}
-                >
-                  {page}
-                </button>
-              );
-            },
+              {Array.from({ length: totalPages }, (_, index) => index + 1).map(
+                (page) => {
+                  const isActive = page === currentPage;
+                  return (
+                    <button
+                      key={page}
+                      type="button"
+                      aria-current={isActive ? "page" : undefined}
+                      onClick={() => setCurrentPage(page)}
+                      className={`h-10 w-10 cursor-pointer rounded-full text-sm leading-[21px] font-semibold transition-colors ${
+                        isActive
+                          ? "bg-vinotinto text-white"
+                          : "bg-white text-verde-bosque ring-1 ring-verde-bosque/15 hover:bg-rosa-coral/10"
+                      }`}
+                    >
+                      {page}
+                    </button>
+                  );
+                },
+              )}
+
+              <button
+                type="button"
+                disabled={currentPage === totalPages}
+                onClick={() => setCurrentPage((page) => page + 1)}
+                className="cursor-pointer rounded-full bg-white px-4 py-2 text-sm leading-[21px] font-semibold text-verde-bosque ring-1 ring-verde-bosque/15 transition-colors hover:bg-rosa-coral/10 disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                Siguiente
+              </button>
+            </nav>
           )}
-
-          <button
-            type="button"
-            disabled={currentPage === totalPages}
-            onClick={() => setCurrentPage((page) => page + 1)}
-            className="cursor-pointer rounded-full bg-white px-4 py-2 text-sm leading-[21px] font-semibold text-verde-bosque ring-1 ring-verde-bosque/15 transition-colors hover:bg-rosa-coral/10 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            Siguiente
-          </button>
-        </nav>
+        </>
       )}
 
       {/* Modal de detalle (se monta solo cuando hay un producto seleccionado) */}
