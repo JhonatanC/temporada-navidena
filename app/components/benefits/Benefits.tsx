@@ -22,7 +22,7 @@ const benefits = [
   },
   {
     id: "envios",
-    title: "Envíos a todo el país",
+    title: "Envíos a toda Colombia",
     description: "Recibe tu pedido en casa, rápido y sin complicaciones.",
     Icon: ShippingIcon,
     bgImage: BgSend.src,
@@ -38,10 +38,11 @@ const benefits = [
 
 export default function Benefits() {
   // En móvil las cajas van debajo del hero con un margen top (`mt-10`) que las
-  // separa. Desde `md` se superponen con un margen top negativo = la mitad de la
-  // altura de la caja (221px / 2 = 110.5px): p-8 (64) + ícono h-14 (56) +
-  // gap-4 x2 (32) + título (27) + descripción 2 líneas (42).
-  // Si cambia el contenido de la caja, ajustar este valor.
+  // separa. El alto mínimo es de 300px para que los textos no se corten en
+  // pantallas pequeñas. Desde `md` se superponen con un margen top negativo =
+  // la mitad de la altura de la caja (221px / 2 = 110.5px): p-8 (64) +
+  // ícono h-14 (56) + gap-4 x2 (32) + título (27) + descripción 2 líneas (42).
+  // Si cambia el contenido de la caja, ajustar estos valores.
   return (
     <section
       id="benefits"
@@ -51,7 +52,7 @@ export default function Benefits() {
       {benefits.map(({ id, title, description, Icon, bgImage }) => (
         <article
           key={id}
-          className="benefits-item group h-full min-h-[221px] w-full cursor-pointer [perspective:1200px]"
+          className="benefits-item group h-full min-h-[260px] md:min-h-[240px] w-full [perspective:1200px]"
         >
           <div className="relative h-full w-full transition-transform duration-700 ease-in-out [transform-style:preserve-3d] group-hover:[transform:rotateX(180deg)] motion-reduce:transition-none motion-reduce:group-hover:[transform:none]">
             {/* Cara frontal */}
