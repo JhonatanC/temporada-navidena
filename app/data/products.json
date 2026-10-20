@@ -435,5 +435,17 @@
       "long": "Este adorable muñeco de nieve de pie es el protagonista ideal para decorar cualquier espacio especial durante esta Navidad. Con una expresión sumamente dulce, mejillas sonrosadas, ojos azules y una clásica nariz de zanahoria, destaca por sus encantadores detalles. Viste un overol de tela a cuadros en tonos rojos y verdes con delicados copos de nieve estampados, tirantes con detalles dorados, una blusa de manga larga decorada con un divertido patrón de caramelos de menta (peppermint) y zapatos rojos con bordes de felpa blanca. Lleva un gorro navideño a juego con el overol, adornado con una banda de suave felpa blanca y un tierno prendedor decorativo en forma de reno sobre un detalle brillante. El toque especial: sostiene en sus brazos a un tierno reno bebé de peluche, el cual cuenta con astas doradas relucientes, pezuñas marrones y una bufanda a juego con estampados navideños."
     },
     "image": "muneco-de-nieve-con-reno-bebe.webp"
+  },
+  {
+    "id": "prod-39",
+    "title": "Escapulario Navideño",
+    "category": "Decoración",
+    "style": "Clásica",
+    "price": 150000,
+    "descriptions": {
+      "short": "Escapulario de puerta en rojo con un gran moño de cintas con copos de nieve, pinitos, piñones, bastones de caramelo y esferitas: la bienvenida navideña para tu puerta.",
+      "long": "Este escapulario llega para vestir la puerta con toda la calidez de la Navidad. Una larga cinta roja con textura de punticos desciende desde el marco y abre paso a un gran moño de tela suave, rematado con lazos superpuestos de cinta roja estampada con copos de nieve blancos y plateados, cuyas puntas descolgando caen con gracia. Sobre el corazón del moño brota un ramillete de pinitos verdes con piñones naturales, bastones de caramelo en rojo y blanco y pequeñas esferas brillantes, como si el bosque de invierno hubiera caminado hasta tu entrada. Un detalle que recibe a la familia y las visitas con espíritu festivo desde el umbral."
+    },
+    "image": "escapulario-navideno.webp"
   }
 ]

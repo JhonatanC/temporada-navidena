@@ -21,6 +21,7 @@ import cortineroP from "../assets/cortinero-p.webp";
 import cortineroReno from "../assets/cortinero-reno.webp";
 import cubreSillas2 from "../assets/cubre-sillas-2.webp";
 import cubreSillasClaros from "../assets/cubre-sillas-claros.webp";
+import escapularioNavideno from "../assets/escapulario-navideno.webp";
 import individualRosado from "../assets/individual-rosado.webp";
 import individualesClaros from "../assets/invididuales-claros.webp";
 import monoAmarilloDecorativo from "../assets/mono-amarillo-decorativo.webp";
@@ -113,6 +114,7 @@ const productImages: Record<string, StaticImageData> = {
   "cortinero-reno.webp": cortineroReno,
   "cubre-sillas-2.webp": cubreSillas2,
   "cubre-sillas-claros.webp": cubreSillasClaros,
+  "escapulario-navideno.webp": escapularioNavideno,
   "individual-rosado.webp": individualRosado,
   "invididuales-claros.webp": individualesClaros,
   "mono-amarillo-decorativo.webp": monoAmarilloDecorativo,
