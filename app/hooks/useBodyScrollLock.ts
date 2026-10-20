@@ -22,7 +22,8 @@ let savedScrollY = 0;
  *   contenido no salte de lado al abrir o cerrar el modal.
  * - En iOS/Safari el scroll táctil ignora `overflow: hidden`, así que el body
  *   se congela en su posición actual con `position: fixed` + `top: -scrollY`
- *   y, al desbloquear, se vuelve a la misma posición con `window.scrollTo`.
+ *   y, al desbloquear, se vuelve a la misma posición con un `window.scrollTo`
+ *   instantáneo (no hereda el scroll suave global de las anclas).
  *
  * Uso: `useBodyScrollLock(product !== null)`. No usar el patrón
  * guardar/restaurar `body.style.overflow` a mano: con dos modales anidados
@@ -74,7 +75,15 @@ function unlock() {
   body.style.width = "";
   body.style.paddingRight = "";
 
-  // Devuelve la página a la posición donde estaba antes de bloquear
-  // (al quitar el `position: fixed` el scroll queda en 0).
+  // Devuelve la página a la posición donde estaba antes de bloquear (al quitar
+  // el `position: fixed` el scroll queda en 0). El retorno debe ser
+  // **instantáneo**: con `html { scroll-behavior: smooth }` (anclas de
+  // hero/promo) el navegador animaría este scrollTo y, al cerrar un modal, la
+  // página haría un viaje visible por el hero hasta volver a la posición. Se
+  // fuerza `auto` solo en esta ventana; el scroll suave global no se toca.
+  const root = document.documentElement;
+  const previousBehavior = root.style.scrollBehavior;
+  root.style.scrollBehavior = "auto";
   window.scrollTo(0, savedScrollY);
+  root.style.scrollBehavior = previousBehavior;
 }

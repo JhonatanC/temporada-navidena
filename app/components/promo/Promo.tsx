@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import SalaDecorada from "../../assets/img-sala-decorada.webp";
 import GiftFinderButton from "../gift-finder/GiftFinderButton";
@@ -9,6 +7,8 @@ import GiftIcon from "./partials/GiftIcon";
  * Sección promocional: fila de dos columnas al 50% (texto a la izquierda e
  * imagen a la derecha), centrada en un contenedor de ancho máximo.
  * Textos y botones son mock: se reemplazarán por el contenido real.
+ * Presentacional (Server Component): la interactividad vive en
+ * `GiftFinderButton` (Client) y el scroll suave del ancla lo maneja CSS.
  */
 const promo = {
   title: "Vive la magia de una Navidad hecha a tu medida",
@@ -37,22 +37,9 @@ export default function Promo() {
         </p>
 
         <div className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
-          {/* Botón principal */}
+          {/* Botón principal: ancla nativa con scroll suave vía CSS */}
           <a
             href="#catalog"
-            onClick={(event) => {
-              const target = document.getElementById("catalog");
-              if (target) {
-                event.preventDefault();
-                const prefersReducedMotion = window.matchMedia(
-                  "(prefers-reduced-motion: reduce)",
-                ).matches;
-                target.scrollIntoView({
-                  behavior: prefersReducedMotion ? "auto" : "smooth",
-                  block: "start",
-                });
-              }
-            }}
             className="w-full cursor-pointer rounded-full bg-vinotinto px-8 py-3 text-center text-base leading-[23px] font-semibold text-white transition-colors hover:bg-rosa-coral sm:w-auto"
           >
             {promo.primaryLabel}

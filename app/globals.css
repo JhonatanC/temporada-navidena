@@ -44,6 +44,15 @@ body {
   height: 100%;
 }
 
+/* 5. Scroll suave para las anclas internas (#inicio, #catalog, #cta, etc.).
+   Solo se activa si el usuario no prefiere "reducir movimiento" (accesibilidad).
+   El título destino compensa el navbar fijo con `scroll-mt-20`. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 #wrapper {
   display: flex;
   flex-direction: column;

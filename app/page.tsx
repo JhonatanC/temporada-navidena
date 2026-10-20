@@ -1,15 +1,20 @@
-"use client";
-
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import BgHero from "./assets/bg-main.webp";
 import Navbar from "./components/navbar/Navbar";
 import Benefits from "./components/benefits/Benefits";
 import Promo from "./components/promo/Promo";
-import Catalog from "./components/catalog/Catalog";
 import Cta from "./components/cta/Cta";
 import GiftFinderButton from "./components/gift-finder/GiftFinderButton";
 import GiftIcon from "./components/hero/partials/GiftIcon";
 import Footer from "./components/footer/Footer";
+
+// Catálogo en un chunk aparte: es la sección más pesada (30 productos +
+// buscador + filtros + paginación + modal) y vive bajo el pliegue. Diferir su
+// JS deja más ancho de banda al inicio para el LCP (la imagen del hero).
+// El prerender sigue incluyendo el HTML (SEO intacto); solo se separa el JS.
+const Catalog = dynamic(() => import("./components/catalog/Catalog"));
 
 // Datos mock del hero. Se reemplazarán por el contenido real más adelante.
 const hero = {
@@ -38,12 +43,14 @@ export default function Home() {
         >
           {/* Imagen de fondo del hero: es la imagen más grande de la primera
               pantalla (LCP), por eso se precarga con `preload` en vez de usar
-              la carga perezosa que next/image aplica por defecto. */}
+              la carga perezosa que next/image aplica por defecto, y se marca
+              con `fetchPriority="high"` para que el navegador la priorice. */}
           <Image
             src={BgHero}
             alt=""
             fill
             preload
+            fetchPriority="high"
             sizes="100vw"
             className="object-cover object-top"
           />
@@ -64,22 +71,12 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col gap-4 sm:flex-row">
-              {/* Botón tipo "apply" (acción principal) */}
+              {/* Botón tipo "apply" (acción principal). Es un ancla nativa a
+                  #catalog: el scroll suave lo maneja CSS (globals.css) respetando
+                  prefers-reduced-motion, y `scroll-mt-20` en la sección compensa
+                  el navbar fijo. Así la home puede ser Server Component. */}
               <a
                 href="#catalog"
-                onClick={(event) => {
-                  const target = document.getElementById("catalog");
-                  if (target) {
-                    event.preventDefault();
-                    const prefersReducedMotion = window.matchMedia(
-                      "(prefers-reduced-motion: reduce)",
-                    ).matches;
-                    target.scrollIntoView({
-                      behavior: prefersReducedMotion ? "auto" : "smooth",
-                      block: "start",
-                    });
-                  }
-                }}
                 className="cursor-pointer rounded-full bg-vinotinto px-8 py-3 text-base leading-[23px] font-semibold text-white transition-colors hover:bg-rosa-coral"
               >
                 {hero.applyLabel}
@@ -102,8 +99,11 @@ export default function Home() {
         {/* Sección promocional: fila texto + imagen */}
         <Promo />
 
-        {/* Catálogo: "Detalles que enamoran" con tarjetas de producto y modal */}
-        <Catalog />
+        {/* Catálogo: "Detalles que enamoran" con tarjetas de producto y modal.
+            Cargado en chunk aparte (ver import dynamic más arriba). */}
+        <Suspense fallback={null}>
+          <Catalog />
+        </Suspense>
 
         {/* Sección CTA a ancho completo: texto + estrella y botón */}
         <Cta />

@@ -1,9 +1,15 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import dynamic from "next/dynamic";
 import { products, type Product } from "@/app/data/products";
 import ProductCard from "@/app/components/cards/ProductCard";
-import ProductModal from "@/app/components/modal/ProductModal";
+
+// El modal se carga en un chunk aparte: solo se abre con interacción
+// ("Ver detalle"), así que su JS no necesita estar en la carga inicial.
+const ProductModal = dynamic(
+  () => import("@/app/components/modal/ProductModal"),
+);
 
 /** Opción "Todos" para mostrar el catálogo completo. */
 const ALL = "Todos";

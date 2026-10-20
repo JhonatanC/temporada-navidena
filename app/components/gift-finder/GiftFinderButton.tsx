@@ -1,7 +1,11 @@
 "use client";
 
 import { useState, type ReactNode } from "react";
-import GiftFinderModal from "./GiftFinderModal";
+import dynamic from "next/dynamic";
+
+// El pop-up se carga en un chunk aparte: solo se abre con interacción, así que
+// su JS no necesita estar en la carga inicial.
+const GiftFinderModal = dynamic(() => import("./GiftFinderModal"));
 
 interface GiftFinderButtonProps {
   /** Texto del botón (por ejemplo, "Encuentra tu regalo"). */

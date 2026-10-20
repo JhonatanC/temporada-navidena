@@ -6,16 +6,24 @@ import { siteDescription, siteName, siteUrl } from "./data/site";
 import "./globals.css";
 
 // Inter: textos generales, párrafos, precios y especificaciones.
+// `display: "swap"` hace que el texto se pinte con la fuente de respaldo
+// (Times/serif → sistema) mientras llega la definitiva, sin bloquear la
+// primera pintura. Se deja variable (sin `weight`): un solo archivo cubre
+// todos los pesos usados (400 y semibold de botones).
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 // Cinzel Decorative: títulos (H1-H6), estilo elegante y festivo.
+// Solo el peso 400 (el que se usa en toda la UI; los títulos heredan el peso
+// normal del body): cargar pesos sin usar retrasa la ruta crítica.
 const cinzelDecorative = Cinzel_Decorative({
   variable: "--font-cinzel",
   subsets: ["latin"],
-  weight: ["400", "700", "900"],
+  weight: ["400"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

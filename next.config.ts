@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
     // URL y no hay riesgo de servir una versión vieja. 31 días evita que en cada
     // visita se vuelvan a pedir las imágenes al servidor.
     minimumCacheTTL: 2678400,
+    // AVIF primero (20-40% más ligero que WebP, mismo contenido): reducir el
+    // peso de las imágenes mejora el LCP (el hero es el mayor elemento).
+    // WebP queda como respaldo para navegadores sin AVIF.
+    formats: ["image/avif", "image/webp"],
   },
   turbopack: {
     rules: {
