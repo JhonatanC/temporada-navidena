@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import SalaDecorada from "../../assets/img-sala-decorada.jpeg";
+import SalaDecorada from "../../assets/img-sala-decorada.webp";
 import GiftFinderButton from "../gift-finder/GiftFinderButton";
 import GiftIcon from "./partials/GiftIcon";
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import BgHero from "./assets/bg-main.jpg";
+import BgHero from "./assets/bg-main.webp";
 import Navbar from "./components/navbar/Navbar";
 import Benefits from "./components/benefits/Benefits";
 import Promo from "./components/promo/Promo";

@@ -3,42 +3,42 @@ import productsData from "./products.json";
 
 // Imágenes de los productos. Se importan de forma estática (igual que el hero
 // y el video) para que Next.js las optimice en build.
-import caminoDeMesaRojo from "../assets/camino-de-mesa-rojo.jpeg";
-import caminoDeMesaRosado from "../assets/camino-de-mesa-rosado.jpeg";
-import cobreSillasRojo from "../assets/cobre-sillas-rojo.jpeg";
-import cojinBlancoNavidad from "../assets/cojin-blanco-navidad.jpeg";
-import cojinGnomos from "../assets/cojin-gnomos.jpeg";
-import cojinMenecosDeNieve from "../assets/cojin-menecos-de-nieve.jpeg";
-import cojinMunecoHieloRosado from "../assets/cojin-muneco-hielo-rosado.jpeg";
-import cojinMunecoNieve from "../assets/cojin-muneco-nieve.jpeg";
-import cojinNoelRojo from "../assets/cojin-noel-rojo.jpeg";
-import cojinNoelRosado from "../assets/cojin-noel-rosado.jpeg";
-import cojinRenoCafe from "../assets/cojin-reno-cafe.jpeg";
-import cojinRojo from "../assets/cojin-rojo.jpeg";
-import cortineroG from "../assets/cortinero-g.jpeg";
-import cortineroH from "../assets/cortinero-h.jpeg";
-import cortineroP from "../assets/cortinero-p.jpeg";
-import cortineroReno from "../assets/cortinero-reno.jpeg";
-import cubreSillas2 from "../assets/cubre-sillas-2.jpeg";
-import cubreSillasClaros from "../assets/cubre-sillas-claros.jpeg";
-import individualRosado from "../assets/individual-rosado.jpeg";
-import individualesClaros from "../assets/invididuales-claros.jpeg";
-import monoAmarilloDecorativo from "../assets/mono-amarillo-decorativo.jpeg";
-import monoRojoDecorativo from "../assets/mono-rojo-decorativo.jpeg";
-import munecoNoelRojo from "../assets/muneco-noel-rojo.jpeg";
-import munecoDeNieve from "../assets/muneco-de-nieve.jpeg";
-import munecoDeNieveConRenoBebe from "../assets/muneco-de-nieve-con-reno-bebe.jpeg";
-import munecoRenoMacho from "../assets/muneco-reno-macho.jpeg";
-import munecoRenoMujer from "../assets/muneco-reno-mujer.jpeg";
-import munecoRenoNordico from "../assets/muneco-reno-nordico.jpeg";
-import munecosDeNieve from "../assets/munecos-de-nieve.jpeg";
-import munecosRenos from "../assets/munecos-renos.jpeg";
-import munecoNieveSentado from "../assets/muneco-nieve-sentado.jpeg";
-import papaNoelDecoracion from "../assets/papa-noel-decoracion.jpeg";
-import pieDeArbolRojo1 from "../assets/pie-de-arbol-rojo-1.jpeg";
-import pieDeArbolRosado from "../assets/pie-de-arbol-rosado.jpeg";
-import reloj from "../assets/reloj.jpeg";
-import renoParejas from "../assets/reno-parejas.jpeg";
+import caminoDeMesaRojo from "../assets/camino-de-mesa-rojo.webp";
+import caminoDeMesaRosado from "../assets/camino-de-mesa-rosado.webp";
+import cobreSillasRojo from "../assets/cobre-sillas-rojo.webp";
+import cojinBlancoNavidad from "../assets/cojin-blanco-navidad.webp";
+import cojinGnomos from "../assets/cojin-gnomos.webp";
+import cojinMenecosDeNieve from "../assets/cojin-menecos-de-nieve.webp";
+import cojinMunecoHieloRosado from "../assets/cojin-muneco-hielo-rosado.webp";
+import cojinMunecoNieve from "../assets/cojin-muneco-nieve.webp";
+import cojinNoelRojo from "../assets/cojin-noel-rojo.webp";
+import cojinNoelRosado from "../assets/cojin-noel-rosado.webp";
+import cojinRenoCafe from "../assets/cojin-reno-cafe.webp";
+import cojinRojo from "../assets/cojin-rojo.webp";
+import cortineroG from "../assets/cortinero-g.webp";
+import cortineroH from "../assets/cortinero-h.webp";
+import cortineroP from "../assets/cortinero-p.webp";
+import cortineroReno from "../assets/cortinero-reno.webp";
+import cubreSillas2 from "../assets/cubre-sillas-2.webp";
+import cubreSillasClaros from "../assets/cubre-sillas-claros.webp";
+import individualRosado from "../assets/individual-rosado.webp";
+import individualesClaros from "../assets/invididuales-claros.webp";
+import monoAmarilloDecorativo from "../assets/mono-amarillo-decorativo.webp";
+import monoRojoDecorativo from "../assets/mono-rojo-decorativo.webp";
+import munecoNoelRojo from "../assets/muneco-noel-rojo.webp";
+import munecoDeNieve from "../assets/muneco-de-nieve.webp";
+import munecoDeNieveConRenoBebe from "../assets/muneco-de-nieve-con-reno-bebe.webp";
+import munecoRenoMacho from "../assets/muneco-reno-macho.webp";
+import munecoRenoMujer from "../assets/muneco-reno-mujer.webp";
+import munecoRenoNordico from "../assets/muneco-reno-nordico.webp";
+import munecosDeNieve from "../assets/munecos-de-nieve.webp";
+import munecosRenos from "../assets/munecos-renos.webp";
+import munecoNieveSentado from "../assets/muneco-nieve-sentado.webp";
+import papaNoelDecoracion from "../assets/papa-noel-decoracion.webp";
+import pieDeArbolRojo1 from "../assets/pie-de-arbol-rojo-1.webp";
+import pieDeArbolRosado from "../assets/pie-de-arbol-rosado.webp";
+import reloj from "../assets/reloj.webp";
+import renoParejas from "../assets/reno-parejas.webp";
 
 /** Taxonomía de estilo del catálogo (usada en el pop-up "Cómo es tu Navidad"). */
 export type ProductStyle = "Clásica" | "Natural" | "Brillante";
@@ -95,42 +95,42 @@ interface RawProduct extends Omit<Product, "image" | "descriptions"> {
 
 // Mapa nombre de archivo -> imagen importada.
 const productImages: Record<string, StaticImageData> = {
-  "camino-de-mesa-rojo.jpeg": caminoDeMesaRojo,
-  "camino-de-mesa-rosado.jpeg": caminoDeMesaRosado,
-  "cobre-sillas-rojo.jpeg": cobreSillasRojo,
-  "cojin-blanco-navidad.jpeg": cojinBlancoNavidad,
-  "cojin-gnomos.jpeg": cojinGnomos,
-  "cojin-menecos-de-nieve.jpeg": cojinMenecosDeNieve,
-  "cojin-muneco-hielo-rosado.jpeg": cojinMunecoHieloRosado,
-  "cojin-muneco-nieve.jpeg": cojinMunecoNieve,
-  "cojin-noel-rojo.jpeg": cojinNoelRojo,
-  "cojin-noel-rosado.jpeg": cojinNoelRosado,
-  "cojin-reno-cafe.jpeg": cojinRenoCafe,
-  "cojin-rojo.jpeg": cojinRojo,
-  "cortinero-g.jpeg": cortineroG,
-  "cortinero-h.jpeg": cortineroH,
-  "cortinero-p.jpeg": cortineroP,
-  "cortinero-reno.jpeg": cortineroReno,
-  "cubre-sillas-2.jpeg": cubreSillas2,
-  "cubre-sillas-claros.jpeg": cubreSillasClaros,
-  "individual-rosado.jpeg": individualRosado,
-  "invididuales-claros.jpeg": individualesClaros,
-  "mono-amarillo-decorativo.jpeg": monoAmarilloDecorativo,
-  "mono-rojo-decorativo.jpeg": monoRojoDecorativo,
-  "muneco-noel-rojo.jpeg": munecoNoelRojo,
-  "muneco-reno-macho.jpeg": munecoRenoMacho,
-  "muneco-reno-mujer.jpeg": munecoRenoMujer,
-  "muneco-de-nieve.jpeg": munecoDeNieve,
-  "muneco-de-nieve-con-reno-bebe.jpeg": munecoDeNieveConRenoBebe,
-  "muneco-reno-nordico.jpeg": munecoRenoNordico,
-  "munecos-de-nieve.jpeg": munecosDeNieve,
-  "munecos-renos.jpeg": munecosRenos,
-  "muneco-nieve-sentado.jpeg": munecoNieveSentado,
-  "papa-noel-decoracion.jpeg": papaNoelDecoracion,
-  "pie-de-arbol-rojo-1.jpeg": pieDeArbolRojo1,
-  "pie-de-arbol-rosado.jpeg": pieDeArbolRosado,
-  "reloj.jpeg": reloj,
-  "reno-parejas.jpeg": renoParejas,
+  "camino-de-mesa-rojo.webp": caminoDeMesaRojo,
+  "camino-de-mesa-rosado.webp": caminoDeMesaRosado,
+  "cobre-sillas-rojo.webp": cobreSillasRojo,
+  "cojin-blanco-navidad.webp": cojinBlancoNavidad,
+  "cojin-gnomos.webp": cojinGnomos,
+  "cojin-menecos-de-nieve.webp": cojinMenecosDeNieve,
+  "cojin-muneco-hielo-rosado.webp": cojinMunecoHieloRosado,
+  "cojin-muneco-nieve.webp": cojinMunecoNieve,
+  "cojin-noel-rojo.webp": cojinNoelRojo,
+  "cojin-noel-rosado.webp": cojinNoelRosado,
+  "cojin-reno-cafe.webp": cojinRenoCafe,
+  "cojin-rojo.webp": cojinRojo,
+  "cortinero-g.webp": cortineroG,
+  "cortinero-h.webp": cortineroH,
+  "cortinero-p.webp": cortineroP,
+  "cortinero-reno.webp": cortineroReno,
+  "cubre-sillas-2.webp": cubreSillas2,
+  "cubre-sillas-claros.webp": cubreSillasClaros,
+  "individual-rosado.webp": individualRosado,
+  "invididuales-claros.webp": individualesClaros,
+  "mono-amarillo-decorativo.webp": monoAmarilloDecorativo,
+  "mono-rojo-decorativo.webp": monoRojoDecorativo,
+  "muneco-noel-rojo.webp": munecoNoelRojo,
+  "muneco-reno-macho.webp": munecoRenoMacho,
+  "muneco-reno-mujer.webp": munecoRenoMujer,
+  "muneco-de-nieve.webp": munecoDeNieve,
+  "muneco-de-nieve-con-reno-bebe.webp": munecoDeNieveConRenoBebe,
+  "muneco-reno-nordico.webp": munecoRenoNordico,
+  "munecos-de-nieve.webp": munecosDeNieve,
+  "munecos-renos.webp": munecosRenos,
+  "muneco-nieve-sentado.webp": munecoNieveSentado,
+  "papa-noel-decoracion.webp": papaNoelDecoracion,
+  "pie-de-arbol-rojo-1.webp": pieDeArbolRojo1,
+  "pie-de-arbol-rosado.webp": pieDeArbolRosado,
+  "reloj.webp": reloj,
+  "reno-parejas.webp": renoParejas,
 };
 
 // Une los datos del JSON con las imágenes importadas.
